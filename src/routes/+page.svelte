@@ -5,6 +5,7 @@
 	import type { Language } from '$lib/@types';
 	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
 	import { goto } from '$app/navigation';
+	import profile_picture from '$lib/assets/pp.jpg';
 
 	let language = getContext('language') as Writable<Language>;
 </script>
@@ -18,9 +19,8 @@
 		<div class="card-header">
 			<h1>Jhonatan David Asprilla Arango</h1>
 			<img
-				src="https://media.licdn.com/dms/image/C4D03AQHTXQvetVMWQg/profile-displayphoto-shrink_400_400/0/1644779343317?e=1697068800&v=beta&t=g088zn6P89PJypIzneaQUUHS5x0BB6NCvywonBaGgs0"
-				alt=""
-				srcset=""
+				src={profile_picture}
+				alt="Imagen personal"
 			/>
 			<h2>{LANGUAGE_DICTIONARIES[$language]['about-me_subtitle_text']}</h2>
 		</div>
