@@ -25,10 +25,11 @@
     .card-header {
         display: grid;
         grid-template-columns: 1fr 0.3fr;
-        grid-template-rows: 0.5fr 1fr;
-        gap: 1em;
+        grid-template-rows: 0.6fr 0.3fr;
+        gap: 0.5em;
         width: 100%;
-        min-height: 100px;
+        min-height: 140px;
+        align-items: end;
 
         margin-bottom: 2em;
     }
@@ -37,14 +38,17 @@
         grid-row: span 2;
         justify-self: center;
         border-radius: 100%;
-        max-width: 120px;
+        max-width: 110px;
+        min-width: 60px;
         width: 100%;
+        align-self: center;
     }
 
     h1 {
         font-size: var(--title-size);
         padding: 0;
         margin: 0;
+        height: fit-content;
     }
 
     p {
@@ -57,5 +61,6 @@
         padding: 0;
         margin: 0;
         text-justify: center;
+        align-self: self-start;
     }
 </style>
