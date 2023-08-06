@@ -126,6 +126,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 6em;
 		justify-items: center;
+        overflow: hidden;
 	}
 
 	.main-container > * {

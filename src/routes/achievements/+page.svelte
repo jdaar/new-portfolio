@@ -45,7 +45,7 @@
     .card-header {
         margin-bottom: 2em;
         display: grid;
-        grid-template-columns: 0.25fr 0.25fr;
+        grid-template-columns: 0.15fr 0.15fr;
         grid-template-rows: 1fr 2.5em;
         column-gap: 1em;
     }
@@ -54,6 +54,9 @@
         background-color: var(--secondary-background-color);
         border: none;
         border-radius: 5px;
+        padding: 0.15em;
+        padding-left: 0.5em;
+        font-size: var(--text-size);
     }
 
     h1 {

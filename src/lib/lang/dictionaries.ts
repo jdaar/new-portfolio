@@ -4,7 +4,8 @@ export const language_tokens = [
     'contact_label',
     'continue_label',
     'about-me_subtitle_text',
-    'about-me_paragraph_text'
+    'about-me_paragraph_text',
+    'achievements_button_label'
 ]
 
 export const available_languages = [
@@ -25,7 +26,8 @@ const es_language_dictionary: LanguageDictionary = {
     'contact_label': 'Como contactarme',
     'continue_label': 'Continuar',
     'about-me_subtitle_text': 'Desarrollador Fullstack',
-    'about-me_paragraph_text': `Profesional innovador con más de 2 años de experiencia en desarrollo web full-stack, móvil y liderazgo de proyectos. Competente en desarrollo con frameworks para aplicaciones web, desarrollo para bases de datos, manejo de servidores (Linux & Windows) y configuración e implementación de herramientas para DevOps (Terraform, Github Actions, Ansible, Docker y Kubernetes).`
+    'about-me_paragraph_text': `Profesional innovador con más de 2 años de experiencia en desarrollo web full-stack, móvil y liderazgo de proyectos. Competente en desarrollo con frameworks para aplicaciones web, desarrollo para bases de datos, manejo de servidores (Linux & Windows) y configuración e implementación de herramientas para DevOps (Terraform, Github Actions, Ansible, Docker y Kubernetes).`,
+    'achievements_button_label': 'Ver mas'
 }
 
 const en_language_dictionary: LanguageDictionary = {
@@ -34,7 +36,8 @@ const en_language_dictionary: LanguageDictionary = {
     'contact_label': 'Contact me',
     'continue_label': 'Continue',
     'about-me_subtitle_text': 'Fullstack developer',
-    'about-me_paragraph_text': `Innovative professional with more than 1 year of experience in full-stack web development, mobile and project leadership. Proficient in development with frameworks for web applications, database development, server management (Linux & Windows) and configuration and implementation of tools for DevOps (Terraform, Github Actions, Ansible, Docker and Kubernetes).`
+    'about-me_paragraph_text': `Innovative professional with more than 1 year of experience in full-stack web development, mobile and project leadership. Proficient in development with frameworks for web applications, database development, server management (Linux & Windows) and configuration and implementation of tools for DevOps (Terraform, Github Actions, Ansible, Docker and Kubernetes).`,
+    'achievements_button_label': 'See more'
 }
 
 type LanguageDictionaries = {
