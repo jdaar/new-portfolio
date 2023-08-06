@@ -1,7 +1,9 @@
 export const language_tokens = [
     'about-me_label',
     'achievements_label',
-    'contact_label'
+    'contact_label',
+    'about-me_subtitle_text',
+    'about-me_paragraph_text'
 ]
 
 export const available_languages = [
@@ -19,12 +21,21 @@ export type LanguageDictionary = {
 const es_language_dictionary = {
     'about-me_label': 'Sobre mi',
     'achievements_label': 'Mis logros',
-    'contact_label': 'Como contactarme'
+    'contact_label': 'Como contactarme',
+    'about-me_subtitle_text': 'Desarrollador Fullstack'
+}
+
+const en_language_dictionary = {
+    'about-me_label': 'About me',
+    'achievements_label': 'My achievements',
+    'contact_label': 'Contact me',
+    'about-me_subtitle_text': 'Fullstack developer'
 }
 
 type LanguageDictionaries = {
     [language in Language]: LanguageDictionary
 }
 export const language_dictionaries: LanguageDictionaries = {
-    es: es_language_dictionary
+    es: es_language_dictionary,
+    en: en_language_dictionary
 }

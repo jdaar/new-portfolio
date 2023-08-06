@@ -1,5 +1,10 @@
 <script lang="ts">
+	import { getContext } from 'svelte';
     import type { PageData } from './$types';
+	import type { Writable } from 'svelte/store';
+    import { language_dictionaries, type Language } from '$lib/lang/dictionaries';
+
+    let language = getContext('language') as Writable<Language>;
     
     export let data: PageData;
 </script>
@@ -7,7 +12,7 @@
 <div class="card-header">
     <h1>Jhonatan David Asprilla Arango</h1>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdbAPdbKWCW8JZRhrUGNhu0iPGABj_qkZEsxazxMk&s" alt="" srcset="">
-    <h2>Desarrollador Fullstack</h2>
+    <h2>{language_dictionaries[$language]['about-me_subtitle_text']}</h2>
 </div>
 
 <p>
