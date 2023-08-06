@@ -101,6 +101,16 @@
 		width: 100%;
 	}
 
+	@media (max-width: 612px) {
+		nav {
+			display: none;
+		}
+
+		.main-container {
+			grid-template-columns: 1fr;
+		}
+	}
+
 	.language {
 		grid-row: 5;
 	}
