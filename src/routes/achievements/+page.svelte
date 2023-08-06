@@ -77,6 +77,12 @@
 		overflow-y: scroll;
 	}
 
+	@media (max-width: 1024px) {
+		.achievements {
+			grid-template-columns: 1fr;
+		}
+	}
+
 	.card-header {
 		margin-bottom: 2em;
 		display: grid;

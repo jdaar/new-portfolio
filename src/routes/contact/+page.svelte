@@ -117,6 +117,15 @@
 		margin-right: 1em;
 	}
 
+	@media (max-width: 1024px) {
+		.social-networks {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			max-height: 50vh;
+			overflow-y: scroll;
+		}
+	}
+
 	.extended {
 		grid-column: span 2;
 	}
