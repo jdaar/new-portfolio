@@ -20,6 +20,7 @@
 	<div />
 	<h2>
 		{LANGUAGE_ACHIEVEMENTS[$language][achievement.title]}<span class="badge"
+            class:badge-secondary={achievement.category=='enterprise'}
 			>{LANGUAGE_DICTIONARIES[$language][`${achievement.category}_label`]}</span
 		>
 	</h2>
@@ -74,6 +75,11 @@
 		border-radius: 1em;
 		margin-left: 1em;
 	}
+
+    .badge-secondary {
+        border-color: var(--secondary-accent-color);
+        color: var(--secondary-accent-color)
+    }
 
 	h2 {
 		display: flex;

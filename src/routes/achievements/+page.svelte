@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import { getContext } from 'svelte';
 	import type { Writable } from 'svelte/store';
 	import Achievement from '$lib/components/achievement.svelte';
@@ -14,7 +14,7 @@
     let category_filter: string;
 </script>
 
-<div transition:fly={{ y: -25, duration: 250, delay: 250}} class="not-scrollable" on:scroll={() => goto('/contact')}>
+<div transition:fade class="not-scrollable" on:scroll={() => goto('/contact')}>
     <div class="scrollable">
 
     <div class="card-header ">

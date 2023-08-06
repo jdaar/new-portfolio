@@ -2,7 +2,7 @@
 	import { getContext } from 'svelte';
     import type { PageData } from './$types';
 	import type { Writable } from 'svelte/store';
-	import { fly } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import type { Language } from '$lib/@types';
 	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
 	import { goto } from '$app/navigation';
@@ -10,7 +10,7 @@
     let language = getContext('language') as Writable<Language>;
 </script>
 
-<div class="not-scrollable" transition:fly={{ y: -25, duration: 250, delay: 250}}
+<div class="not-scrollable" transition:fade
 on:scroll={() => goto('/achievements')}
 >
     <div class="scrollable" >
