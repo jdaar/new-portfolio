@@ -33,6 +33,10 @@
 	setContext('language', language);
 </script>
 
+<svelte:head>
+	<title>Jhonatan David</title>
+</svelte:head>
+
 <div class="main-container">
 	<button
 		class="language standalone"

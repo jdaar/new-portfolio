@@ -105,6 +105,10 @@
 		scrollbar-width: none;
 		max-height: 65vh;
 	}
+
+	.not-scrollable::-webkit-scrollbar {
+		display: none;
+	}
 	.accent-text {
 		border: 2px solid var(--border-color);
 		color: var(--foreground-color);
