@@ -8,7 +8,7 @@
 
     --title-size: calc(1.5rem + (1vw - .08em)*.7);
     --subtitle-size: calc(1.1rem + (1vw - .28em)*.7);
-    --text-size: calc(.8rem + (1vw - .48em)*.7);
+    --text-size: calc(1rem + (1vw - .78em)*.7);
 }
 
 

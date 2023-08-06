@@ -11,12 +11,12 @@
 
 <div class="card-header">
     <h1>Jhonatan David Asprilla Arango</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdbAPdbKWCW8JZRhrUGNhu0iPGABj_qkZEsxazxMk&s" alt="" srcset="">
+    <img src="https://media.licdn.com/dms/image/C4D03AQHTXQvetVMWQg/profile-displayphoto-shrink_400_400/0/1644779343317?e=1697068800&v=beta&t=g088zn6P89PJypIzneaQUUHS5x0BB6NCvywonBaGgs0" alt="" srcset="">
     <h2>{language_dictionaries[$language]['about-me_subtitle_text']}</h2>
 </div>
 
 <p>
-    Profesional innovador con más de 2 años de experiencia en desarrollo web full-stack, móvil y liderazgo de proyectos
+    {language_dictionaries[$language]['about-me_paragraph_text']}
 </p>
 
 <style>
@@ -35,12 +35,18 @@
         grid-row: span 2;
         justify-self: center;
         border-radius: 100%;
+        max-width: 120px;
+        width: 100%;
     }
 
     h1 {
         font-size: var(--title-size);
         padding: 0;
         margin: 0;
+    }
+
+    p {
+        font-size: var(--text-size);
     }
 
     h2 {
