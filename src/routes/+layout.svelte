@@ -8,7 +8,6 @@
 	import { browser } from '$app/environment';
 	import type { Language } from '$lib/@types';
 	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
-	import { fade } from 'svelte/transition';
 
 	let language = writable<Language>('es');
 	if (browser) {
