@@ -34,6 +34,12 @@
 </script>
 
 <div class="main-container">
+	<button class="language standalone"
+		on:click={() => {
+			$language = $language == 'es' ? 'en' : 'es';
+			localStorage.setItem(LS_LANGUAGE_KEY, $language);
+		}}>{$language == 'es' ? `🇺🇸` : `🇪🇸`}</button
+	>
 	<div class="main-content">
 		<div
 			class="content-slot"
@@ -101,13 +107,29 @@
 		width: 100%;
 	}
 
+	.standalone {
+		display: none;
+	}
+
 	@media (max-width: 612px) {
 		nav {
 			display: none;
 		}
 
+		.standalone {
+			display: block;
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			height: 4em;
+			font-size: var(--subtitle-size);
+			width: 4em;
+			padding: 0
+		}
+
 		.main-container {
 			grid-template-columns: 1fr;
+			gap: 0.1em;
 		}
 	}
 
