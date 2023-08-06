@@ -125,7 +125,7 @@
 		.social-networks {
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr 1fr 1fr;
-			max-height: 45vh;
+			max-height: 40vh;
 			overflow-y: scroll;
 		}
 	}
