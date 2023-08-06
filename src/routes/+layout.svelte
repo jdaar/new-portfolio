@@ -34,7 +34,8 @@
 </script>
 
 <div class="main-container">
-	<button class="language standalone"
+	<button
+		class="language standalone"
 		on:click={() => {
 			$language = $language == 'es' ? 'en' : 'es';
 			localStorage.setItem(LS_LANGUAGE_KEY, $language);
@@ -124,7 +125,7 @@
 			height: 4em;
 			font-size: var(--subtitle-size);
 			width: 4em;
-			padding: 0
+			padding: 0;
 		}
 
 		.main-container {
