@@ -10,33 +10,38 @@ export const ACHIEVEMENT_CATEGORIES = [
 export const ACHIEVEMENTS: Array<Achievement> = [
   {
     title: 'proctorlms',
-    technologies: ['Python', 'Svelte', 'Typescript'],
+    technologies: ['Python', 'Svelte', 'Typescript', 'Django'],
     category: 'project',
   },
   {
     title: 'fsbuddy',
     technologies: ['C#', '.NET'],
     category: 'project',
+    href: 'https://github.com/jdaar/FsBuddy'
   },
   {
     title: 'careerpal',
     technologies: ['Svelte', 'Typescript', 'MongoDB', 'SQL Server', 'Puppeteer'],
     category: 'project',
+    href: 'https://github.com/jdaar/CareerPal'
   },
   {
     title: 'chordsapp',
     technologies: ['Svelte', 'Typescript'],
     category: 'project',
+    href: 'https://chord.jasprilla.me/'
   },
   {
     title: 'unhorario',
     technologies: ['Vue', 'Typescript', 'Pinia'],
     category: 'project',
+    href: 'https://unhorario.jasprilla.me/'
   },
   {
     title: 'alertbud',
     technologies: ['Go', 'Typescript', 'Svelte', 'MongoDB'],
     category: 'project',
+    href: 'https://www.alertbud.co/'
   },
   {
     title: 'sapb1connector',
@@ -102,7 +107,10 @@ export const LANGUAGE_TOKENS = [
   'continue_label',
   'about-me_subtitle_text',
   'about-me_paragraph_text',
-  'achievements_button_label'
+  'achievements_button_label',
+  'all_text',
+  'project_label',
+  'enterprise_label'
 ]
 
 export const AVAILABLE_LANGUAGES = [
