@@ -5,5 +5,5 @@ export const csr = true;
 export const prerender = false;
 
 export const load = (async () => {
-    return {};
+	return {};
 }) satisfies LayoutServerLoad;

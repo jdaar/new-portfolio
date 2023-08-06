@@ -19,8 +19,9 @@
 <div class="achievement">
 	<div />
 	<h2>
-		{LANGUAGE_ACHIEVEMENTS[$language][achievement.title]}<span class="badge"
-            class:badge-secondary={achievement.category=='enterprise'}
+		{LANGUAGE_ACHIEVEMENTS[$language][achievement.title]}<span
+			class="badge"
+			class:badge-secondary={achievement.category == 'enterprise'}
 			>{LANGUAGE_DICTIONARIES[$language][`${achievement.category}_label`]}</span
 		>
 	</h2>
@@ -42,10 +43,14 @@
 		{/each}
 	</div>
 	<div class="actions">
-		<button 
-            on:click={() => {window.open(achievement['href'])}}
-            disabled={achievement.href == '' || achievement.href == undefined}
-            class:disabled-btn={achievement.href == '' || achievement.href == undefined}>{LANGUAGE_DICTIONARIES[$language]['achievements_button_label']}</button>
+		<button
+			on:click={() => {
+				window.open(achievement['href']);
+			}}
+			disabled={achievement.href == '' || achievement.href == undefined}
+			class:disabled-btn={achievement.href == '' || achievement.href == undefined}
+			>{LANGUAGE_DICTIONARIES[$language]['achievements_button_label']}</button
+		>
 	</div>
 	<div />
 </div>
@@ -56,11 +61,11 @@
 		padding-bottom: 1em;
 	}
 
-    .disabled-btn {
-        background-color: black;
-        border: 2px solid var(--border-color);
-        color: var(--border-color);
-    }
+	.disabled-btn {
+		background-color: black;
+		border: 2px solid var(--border-color);
+		color: var(--border-color);
+	}
 
 	.badge {
 		border: 2px solid var(--accent-color);
@@ -76,10 +81,10 @@
 		margin-left: 1em;
 	}
 
-    .badge-secondary {
-        border-color: var(--secondary-accent-color);
-        color: var(--secondary-accent-color)
-    }
+	.badge-secondary {
+		border-color: var(--secondary-accent-color);
+		color: var(--secondary-accent-color);
+	}
 
 	h2 {
 		display: flex;

@@ -1,20 +1,25 @@
-import type { ACHIEVEMENT_CATEGORIES, AVAILABLE_LANGUAGES, AVAILABLE_TECHNOLOGIES, LANGUAGE_TOKENS } from "./const"
+import type {
+	ACHIEVEMENT_CATEGORIES,
+	AVAILABLE_LANGUAGES,
+	AVAILABLE_TECHNOLOGIES,
+	LANGUAGE_TOKENS
+} from './const';
 
-export type Technology = typeof AVAILABLE_TECHNOLOGIES[number];
+export type Technology = (typeof AVAILABLE_TECHNOLOGIES)[number];
 
-export type AchievementCategory = typeof ACHIEVEMENT_CATEGORIES[number];
+export type AchievementCategory = (typeof ACHIEVEMENT_CATEGORIES)[number];
 
 export type Achievement = {
-    title: string,
-    description?: string,
-    technologies: Array<Technology>,
-    href?: string,
-    category: AchievementCategory
-}
+	title: string;
+	description?: string;
+	technologies: Array<Technology>;
+	href?: string;
+	category: AchievementCategory;
+};
 
-export type Language = typeof AVAILABLE_LANGUAGES[number]
-export type LanguageToken = typeof LANGUAGE_TOKENS[number]
+export type Language = (typeof AVAILABLE_LANGUAGES)[number];
+export type LanguageToken = (typeof LANGUAGE_TOKENS)[number];
 
 export type LanguageDictionary = {
-    [key in LanguageToken]: string
-}
+	[key in LanguageToken]: string;
+};

@@ -102,7 +102,7 @@
 	}
 
 	.language {
-        grid-row: 5;
+		grid-row: 5;
 	}
 
 	.continue > button {
@@ -121,7 +121,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 6em;
 		justify-items: center;
-        overflow: hidden;
+		overflow: hidden;
 	}
 
 	.main-container > * {
