@@ -10,7 +10,7 @@
     export let data: PageData;
 </script>
 
-<div transition:fly={{ y: -25, duration: 500}}>
+<div transition:fly={{ y: -25, duration: 250}}>
     <div class="card-header">
         <h1>Jhonatan David Asprilla Arango</h1>
         <img src="https://media.licdn.com/dms/image/C4D03AQHTXQvetVMWQg/profile-displayphoto-shrink_400_400/0/1644779343317?e=1697068800&v=beta&t=g088zn6P89PJypIzneaQUUHS5x0BB6NCvywonBaGgs0" alt="" srcset="">
