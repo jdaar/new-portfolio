@@ -14,7 +14,7 @@
     let category_filter: string;
 </script>
 
-<div transition:fade class="not-scrollable" on:scroll={() => goto('/contact')}>
+<div transition:fade={{ duration: 250, delay: 300 }} class="not-scrollable" on:scroll={() => goto('/contact')}>
     <div class="scrollable">
 
     <div class="card-header ">

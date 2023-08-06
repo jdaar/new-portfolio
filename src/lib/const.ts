@@ -110,7 +110,9 @@ export const LANGUAGE_TOKENS = [
   'achievements_button_label',
   'all_text',
   'project_label',
-  'enterprise_label'
+  'enterprise_label',
+  'goto-github_label',
+  'goto-linkedin_label'
 ]
 
 export const AVAILABLE_LANGUAGES = [

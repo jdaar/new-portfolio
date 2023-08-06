@@ -11,7 +11,9 @@ const es_language_dictionary: LanguageDictionary = {
     'achievements_button_label': 'Ver mas',
     'all_text': 'Ver todos',
     'project_label': 'Projectos',
-    'enterprise_label': 'Empresariales'
+    'enterprise_label': 'Empresariales',
+    'goto-linkedin_label': 'Ir a Linkedin',
+    'goto-github_label': 'Ir a Github'
 }
 
 const es_language_achievements = {
@@ -40,7 +42,8 @@ const en_language_dictionary: LanguageDictionary = {
     'all_text': 'Include all',
     'project_label': 'Project',
     'enterprise_label': 'Enterprise',
-    
+    'goto-linkedin_label': 'Go to Linkedin',
+    'goto-github_label': 'Go to Github'
 }
 
 const en_language_achievements = {

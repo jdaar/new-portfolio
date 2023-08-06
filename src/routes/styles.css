@@ -18,7 +18,8 @@
     font-family: 'Inter', sans-serif;
 }
 
-body, html {
+body,
+html {
     background-color: var(--background-color);
     height: 100%;
     margin: 0;
@@ -29,7 +30,8 @@ body, html {
     overflow: hidden;
 }
 
-body, html > * {
+body,
+html>* {
     width: 100%;
     height: 100%;
 }
@@ -46,4 +48,44 @@ button {
     height: 2.5em;
     max-height: 2.5em;
     font-size: var(--text-size);
+}
+
+button:hover {
+    cursor: pointer;
+    -webkit-animation: pulsate-bck 0.5s both;
+    animation: pulsate-bck 0.5s both;
+}
+
+@-webkit-keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }

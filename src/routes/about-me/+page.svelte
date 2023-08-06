@@ -10,8 +10,7 @@
     let language = getContext('language') as Writable<Language>;
 </script>
 
-<div class="not-scrollable" transition:fade
-on:scroll={() => goto('/achievements')}
+<div class="not-scrollable" transition:fade={{ duration: 250, delay: 300 }} on:scroll={() => goto('/achievements')}
 >
     <div class="scrollable" >
         <div class="card-header">
