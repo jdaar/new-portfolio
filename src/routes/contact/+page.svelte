@@ -19,10 +19,10 @@
 			<h1>{LANGUAGE_DICTIONARIES[$language]['contact_label']}</h1>
 		</div>
 		<div class="social-networks">
-			<div class="network">
+			<div class="network extended">
 				<svg
-					width="122"
-					height="122"
+					width="100"
+					height="100"
 					viewBox="0 0 122 122"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +34,10 @@
 				</svg>
 				<button>{LANGUAGE_DICTIONARIES[$language]['goto-github_label']}</button>
 			</div>
-			<div class="network">
+			<div class="network extended">
 				<svg
-					width="130"
-					height="130"
+					width="100"
+					height="100"
 					viewBox="0 0 130 90"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -51,8 +51,8 @@
 			</div>
 			<div class="network extended">
 				<svg
-					width="107"
-					height="96"
+					width="100"
+					height="100"
 					viewBox="0 0 107 96"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -66,8 +66,8 @@
 			</div>
 			<div class="network extended">
 				<svg
-					width="123"
-					height="123"
+					width="100"
+					height="100"
 					viewBox="0 0 123 123"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
