@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
-	import type { PageData } from './about-me/$types';
 	import type { Writable } from 'svelte/store';
 	import { fade } from 'svelte/transition';
 	import type { Language } from '$lib/@types';

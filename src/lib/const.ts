@@ -1,4 +1,4 @@
-import type { Achievement, Technology } from './@types';
+import type { Achievement } from './@types';
 
 export const LS_LANGUAGE_KEY = 'language';
 

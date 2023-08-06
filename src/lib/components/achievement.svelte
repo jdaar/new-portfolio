@@ -3,6 +3,7 @@
 	import { LANGUAGE_ACHIEVEMENTS, LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
 	import { TECHNOLOGIES_LOGOS } from '$lib/logos';
 	import { getContext } from 'svelte';
+	/* eslint-disable */
 	// @ts-ignore
 	import SvelteTooltip from 'svelte-tooltip';
 	import type { Writable } from 'svelte/store';
