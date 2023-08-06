@@ -1,7 +1,7 @@
 <script lang="ts">
-    export const ssr = false;
-    export const csr = true;
-    export const prerender = false;
+	export const ssr = false;
+	export const csr = true;
+	export const prerender = false;
 
 	import './styles.css';
 	import type { LayoutData } from './$types';
@@ -13,11 +13,11 @@
 	import { LS_LANGUAGE_KEY } from '$lib/const';
 	import { browser } from '$app/environment';
 
-    let language = writable<Language>('es');
-    if (browser) {
-        const cached_language = localStorage.getItem(LS_LANGUAGE_KEY);
-        $language = cached_language ?? $language
-    }
+	let language = writable<Language>('es');
+	if (browser) {
+		const cached_language = localStorage.getItem(LS_LANGUAGE_KEY);
+		$language = cached_language ?? $language;
+	}
 
 	let routes: { [key: string]: { label: string; next: string } } = {
 		'/about-me': {
@@ -48,7 +48,7 @@
 		</div>
 		<div class="continue">
 			<button on:click={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
-				>Continuar</button
+				>{language_dictionaries[$language]['continue_label']}</button
 			>
 			<svg
 				width="24"
@@ -77,8 +77,8 @@
 				<button
 					on:click={() => {
 						$language = $language == 'es' ? 'en' : 'es';
-                        localStorage.setItem(LS_LANGUAGE_KEY, $language);
-					}}>Espanol</button
+						localStorage.setItem(LS_LANGUAGE_KEY, $language);
+					}}>{$language == 'es' ? `🇺🇸 English` : `🇪🇸 Español`}</button
 				>
 			</li>
 		</ul>
@@ -107,7 +107,7 @@
 	}
 
 	.language {
-		margin-top: auto;
+        grid-row: 5;
 	}
 
 	.continue > button {
@@ -136,8 +136,6 @@
 		color: var(--accent-color);
 	}
 
- 
-    
 	.selected::before {
 		content: '';
 		display: block;
@@ -155,37 +153,37 @@
 		position: relative;
 	}
 
-    ul::before {
+	ul::before {
 		content: '';
 		display: block;
 		position: absolute;
 		margin-top: 2px;
 		left: -5px;
-        top: -5px;
+		top: -5px;
 		border-radius: 100%;
 
 		width: 10px;
 		height: 10px;
 		background-color: var(--border-color);
-    }
+	}
 
-    ul::after {
+	ul::after {
 		content: '';
 		display: block;
 		position: absolute;
 		margin-top: 2px;
 		left: -5px;
-        bottom: -5px;
+		bottom: -5px;
 		border-radius: 100%;
 
 		width: 10px;
 		height: 10px;
 		background-color: var(--border-color);
-    }
+	}
 
 	nav > ul {
 		display: grid;
-		grid-template-rows: 2em 2em 2em;
+		grid-template-rows: 2em 2em 2em 1fr 4em;
 		grid-template-columns: 1fr;
 		list-style: none;
 		padding: 0;
@@ -207,5 +205,6 @@
 		color: var(--foreground-color);
 		font-size: var(--subtitle-size);
 		font-weight: 600;
+		transition: 0.5s;
 	}
 </style>
