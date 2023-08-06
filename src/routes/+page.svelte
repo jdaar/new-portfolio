@@ -18,10 +18,7 @@
 	<div class="scrollable">
 		<div class="card-header">
 			<h1>Jhonatan David Asprilla Arango</h1>
-			<img
-				src={profile_picture}
-				alt="Imagen personal"
-			/>
+			<img src={profile_picture} alt="Imagen personal" />
 			<h2>{LANGUAGE_DICTIONARIES[$language]['about-me_subtitle_text']}</h2>
 		</div>
 		<p>
