@@ -10,7 +10,6 @@
 	let language = getContext('language') as Writable<Language>;
 </script>
 
-
 <svelte:head>
 	<title>Jhonatan David</title>
 </svelte:head>

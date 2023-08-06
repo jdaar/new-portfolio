@@ -35,14 +35,20 @@
 </script>
 
 <svelte:head>
-	<meta name="title" content="Jhonatan David">
-	<meta name="description" content="A comprehensive portfolio showcasing the work and projects of Jhonatan David. Discover valuable insights into his professional accomplishments.">
-	<meta name="keywords" content="portafolio,developer,fullstack,backend,frontend,medellin,remote,remoto,desarrollador,analista,administrador,sistemas,ingeniero,freelance,job,trabajo,remote,administrator,linux,windows,svelte,react,reactnative,native,html,css,js,python,c#">
-	<meta name="robots" content="index, follow">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="language" content="English">
-	<meta name="revisit-after" content="30 days">
-	<meta name="author" content="Jhonatan David">
+	<meta name="title" content="Jhonatan David" />
+	<meta
+		name="description"
+		content="A comprehensive portfolio showcasing the work and projects of Jhonatan David. Discover valuable insights into his professional accomplishments."
+	/>
+	<meta
+		name="keywords"
+		content="portafolio,developer,fullstack,backend,frontend,medellin,remote,remoto,desarrollador,analista,administrador,sistemas,ingeniero,freelance,job,trabajo,remote,administrator,linux,windows,svelte,react,reactnative,native,html,css,js,python,c#"
+	/>
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="English" />
+	<meta name="revisit-after" content="30 days" />
+	<meta name="author" content="Jhonatan David" />
 </svelte:head>
 <Analytics />
 
