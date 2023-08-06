@@ -77,6 +77,10 @@
 		overflow-y: scroll;
 	}
 
+	.not-scrollable::-webkit-scrollbar {
+		display: none;
+	}
+
 	@media (max-width: 1024px) {
 		.achievements {
 			grid-template-columns: 1fr;
