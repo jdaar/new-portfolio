@@ -136,6 +136,8 @@
 		color: var(--accent-color);
 	}
 
+ 
+    
 	.selected::before {
 		content: '';
 		display: block;
@@ -152,6 +154,34 @@
 	nav {
 		position: relative;
 	}
+
+    ul::before {
+		content: '';
+		display: block;
+		position: absolute;
+		margin-top: 2px;
+		left: -5px;
+        top: -5px;
+		border-radius: 100%;
+
+		width: 10px;
+		height: 10px;
+		background-color: var(--border-color);
+    }
+
+    ul::after {
+		content: '';
+		display: block;
+		position: absolute;
+		margin-top: 2px;
+		left: -5px;
+        bottom: -5px;
+		border-radius: 100%;
+
+		width: 10px;
+		height: 10px;
+		background-color: var(--border-color);
+    }
 
 	nav > ul {
 		display: grid;
