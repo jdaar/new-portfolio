@@ -10,6 +10,11 @@
 	let language = getContext('language') as Writable<Language>;
 </script>
 
+
+<svelte:head>
+	<title>Jhonatan David</title>
+</svelte:head>
+
 <div
 	class="not-scrollable"
 	transition:fade={{ duration: 250, delay: 300 }}

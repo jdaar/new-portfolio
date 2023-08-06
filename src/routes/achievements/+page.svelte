@@ -14,6 +14,10 @@
 	let category_filter: string;
 </script>
 
+<svelte:head>
+	<title>{LANGUAGE_DICTIONARIES[$language]['achievements_label']}</title>
+</svelte:head>
+
 <div
 	transition:fade={{ duration: 250, delay: 300 }}
 	class="not-scrollable"

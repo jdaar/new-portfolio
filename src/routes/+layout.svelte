@@ -8,6 +8,7 @@
 	import { browser } from '$app/environment';
 	import type { Language } from '$lib/@types';
 	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
+	import Analytics from '$lib/components/analytics.svelte';
 
 	let language = writable<Language>('es');
 	if (browser) {
@@ -34,8 +35,16 @@
 </script>
 
 <svelte:head>
-	<title>Jhonatan David</title>
+	<meta name="title" content="Jhonatan David">
+	<meta name="description" content="A comprehensive portfolio showcasing the work and projects of Jhonatan David. Discover valuable insights into his professional accomplishments.">
+	<meta name="keywords" content="portafolio,developer,fullstack,backend,frontend,medellin,remote,remoto,desarrollador,analista,administrador,sistemas,ingeniero,freelance,job,trabajo,remote,administrator,linux,windows,svelte,react,reactnative,native,html,css,js,python,c#">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="English">
+	<meta name="revisit-after" content="30 days">
+	<meta name="author" content="Jhonatan David">
 </svelte:head>
+<Analytics />
 
 <div class="main-container">
 	<button

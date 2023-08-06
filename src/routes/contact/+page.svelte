@@ -9,6 +9,10 @@
 	let language = getContext('language') as Writable<Language>;
 </script>
 
+<svelte:head>
+	<title>{LANGUAGE_DICTIONARIES[$language]['contact_label']}</title>
+</svelte:head>
+
 <div
 	transition:fade={{ duration: 250, delay: 300 }}
 	class="not-scrollable"

@@ -7,8 +7,8 @@
 	--secondary-accent-color: rgba(161, 121, 220, 1);
 
 	--title-size: calc(1.5rem + (1vw - 0.08em) * 0.7);
-	--subtitle-size: calc(1.1rem + (1vw - 0.28em) * 0.7);
-	--text-size: calc(1rem + (1vw - 0.78em) * 0.7);
+	--subtitle-size: calc(1.3rem + (1vw - 0.48em) * 0.7);
+	--text-size: calc(1.2rem + (1vw - 0.8em) * 0.7);
 }
 
 * {
