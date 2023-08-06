@@ -16,7 +16,7 @@
 	}
 
 	let routes: { [key: string]: { label: string; next: string } } = {
-		'/about-me': {
+		'/': {
 			label: 'about-me_label',
 			next: '/achievements'
 		},
@@ -26,7 +26,7 @@
 		},
 		'/contact': {
 			label: 'contact_label',
-			next: '/about-me'
+			next: '/'
 		}
 	};
 

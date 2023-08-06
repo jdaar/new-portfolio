@@ -9,7 +9,7 @@
     let language = getContext('language') as Writable<Language>;
 </script>
 
-<div transition:fade={{ duration: 250, delay: 300 }} class="not-scrollable" on:scroll={() => goto('/about-me')}>
+<div transition:fade={{ duration: 250, delay: 300 }} class="not-scrollable" on:scroll={() => goto('/')}>
     <div class="scrollable">
         <div class="card-header">
             <h1>{LANGUAGE_DICTIONARIES[$language]['contact_label']}</h1>
