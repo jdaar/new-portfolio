@@ -2,22 +2,21 @@
 	import { getContext } from 'svelte';
     import type { PageData } from './$types';
 	import type { Writable } from 'svelte/store';
-    import { language_dictionaries, type Language } from '$lib/lang/dictionaries';
 	import { fly } from 'svelte/transition';
+	import type { Language } from '$lib/@types';
+	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
 
     let language = getContext('language') as Writable<Language>;
-    
-    export let data: PageData;
 </script>
 
-<div transition:fly={{ y: -25, duration: 250}}>
+<div transition:fly={{ y: -25, duration: 250, delay: 250}}>
     <div class="card-header">
         <h1>Jhonatan David Asprilla Arango</h1>
         <img src="https://media.licdn.com/dms/image/C4D03AQHTXQvetVMWQg/profile-displayphoto-shrink_400_400/0/1644779343317?e=1697068800&v=beta&t=g088zn6P89PJypIzneaQUUHS5x0BB6NCvywonBaGgs0" alt="" srcset="">
-        <h2>{language_dictionaries[$language]['about-me_subtitle_text']}</h2>
+        <h2>{LANGUAGE_DICTIONARIES[$language]['about-me_subtitle_text']}</h2>
     </div>
     <p>
-        {language_dictionaries[$language]['about-me_paragraph_text']}
+        {LANGUAGE_DICTIONARIES[$language]['about-me_paragraph_text']}
     </p>
 </div>
 

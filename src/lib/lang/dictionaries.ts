@@ -1,24 +1,5 @@
-export const language_tokens = [
-    'about-me_label',
-    'achievements_label',
-    'contact_label',
-    'continue_label',
-    'about-me_subtitle_text',
-    'about-me_paragraph_text',
-    'achievements_button_label'
-]
+import type { Language, LanguageDictionary } from "$lib/@types"
 
-export const available_languages = [
-    'es',
-    'en'
-]
-
-export type Language = typeof available_languages[number]
-export type LanguageToken = typeof language_tokens[number]
-
-export type LanguageDictionary = {
-    [key in LanguageToken]: string
-}
 
 const es_language_dictionary: LanguageDictionary = {
     'about-me_label': 'Sobre mi',
@@ -43,7 +24,7 @@ const en_language_dictionary: LanguageDictionary = {
 type LanguageDictionaries = {
     [language in Language]: LanguageDictionary
 }
-export const language_dictionaries: LanguageDictionaries = {
+export const LANGUAGE_DICTIONARIES: LanguageDictionaries = {
     es: es_language_dictionary,
     en: en_language_dictionary
 }

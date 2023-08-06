@@ -1,17 +1,13 @@
 <script lang="ts">
-	export const ssr = false;
-	export const csr = true;
-	export const prerender = false;
-
 	import './styles.css';
-	import type { LayoutData } from './$types';
 	import { page } from '$app/stores';
-	import { language_dictionaries, type Language } from '$lib/lang/dictionaries';
 	import { writable } from 'svelte/store';
 	import { setContext } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { LS_LANGUAGE_KEY } from '$lib/const';
 	import { browser } from '$app/environment';
+	import type { Language } from '$lib/@types';
+	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
 
 	let language = writable<Language>('es');
 	if (browser) {
@@ -35,7 +31,6 @@
 	};
 
 	setContext('language', language);
-	export let data: LayoutData;
 </script>
 
 <div class="main-container">
@@ -48,7 +43,7 @@
 		</div>
 		<div class="continue">
 			<button on:click={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
-				>{language_dictionaries[$language]['continue_label']}</button
+				>{LANGUAGE_DICTIONARIES[$language]['continue_label']}</button
 			>
 			<svg
 				width="24"
@@ -69,7 +64,7 @@
 			{#each Object.keys(routes) as route}
 				<li>
 					<a href={route} class:selected={route == $page.url.pathname}>
-						{language_dictionaries[$language][routes[route]['label']]}
+						{LANGUAGE_DICTIONARIES[$language][routes[route]['label']]}
 					</a>
 				</li>
 			{/each}
