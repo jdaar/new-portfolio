@@ -32,7 +32,9 @@
 						fill="white"
 					/>
 				</svg>
-				<button on:click={() => window.open('https://github.com/jdaar', '_blank')}>{LANGUAGE_DICTIONARIES[$language]['goto-github_label']}</button>
+				<button on:click={() => window.open('https://github.com/jdaar', '_blank')}
+					>{LANGUAGE_DICTIONARIES[$language]['goto-github_label']}</button
+				>
 			</div>
 			<div class="network extended">
 				<svg
@@ -47,7 +49,9 @@
 						fill="white"
 					/>
 				</svg>
-				<button on:click={() => window.open('https://www.linkedin.com/in/jasprilla/', '_blank')}>{LANGUAGE_DICTIONARIES[$language]['goto-linkedin_label']}</button>
+				<button on:click={() => window.open('https://www.linkedin.com/in/jasprilla/', '_blank')}
+					>{LANGUAGE_DICTIONARIES[$language]['goto-linkedin_label']}</button
+				>
 			</div>
 			<div class="network extended">
 				<svg
