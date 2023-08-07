@@ -90,6 +90,19 @@
 	h2 {
 		display: flex;
 		align-items: center;
+		width: 100%;
+	}
+
+	@media (max-width: 612px) {
+		h2 {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		span {
+			margin-left: 0 !important;
+			margin-top: 1em;
+		}
 	}
 
 	.achievement {

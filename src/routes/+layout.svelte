@@ -9,6 +9,7 @@
 	import type { Language } from '$lib/@types';
 	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
 	import Analytics from '$lib/components/analytics.svelte';
+	import { fade } from 'svelte/transition';
 
 	let language = writable<Language>('es');
 	if (browser) {
@@ -63,9 +64,17 @@
 	<div class="main-content">
 		<div
 			class="content-slot"
-			on:scroll={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
 		>
-			<slot />
+		 	{#key $page.url.pathname}
+			<div
+				class="not-scrollable"
+				on:scroll={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
+			>
+				<div class="scrollable" >
+					<slot />
+				</div>
+			</div>
+			{/key}
 		</div>
 		<div class="continue">
 			<button on:click={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
@@ -107,6 +116,29 @@
 </div>
 
 <style>
+	.scrollable {
+		height: 1000px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.not-scrollable {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		max-height: 60vh;
+	}
+
+	.not-scrollable::-webkit-scrollbar {
+		display: none;
+	}
+
+
 	.main-container {
 		display: grid;
 		grid-template-columns: 1fr 0.4fr;

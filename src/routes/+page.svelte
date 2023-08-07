@@ -14,39 +14,16 @@
 	<title>Jhonatan David</title>
 </svelte:head>
 
-<div
-	class="not-scrollable"
-	transition:fade={{ duration: 250, delay: 300 }}
-	on:scroll={() => goto('/achievements')}
->
-	<div class="scrollable">
-		<div class="card-header">
-			<h1>Jhonatan David Asprilla Arango</h1>
-			<img src={profile_picture} alt="Imagen personal" />
-			<h2>{LANGUAGE_DICTIONARIES[$language]['about-me_subtitle_text']}</h2>
-		</div>
-		<p>
-			{LANGUAGE_DICTIONARIES[$language]['about-me_paragraph_text']}
-		</p>
-	</div>
+<div class="card-header">
+	<h1>Jhonatan David Asprilla Arango</h1>
+	<img src={profile_picture} alt="Imagen personal" />
+	<h2>{LANGUAGE_DICTIONARIES[$language]['about-me_subtitle_text']}</h2>
 </div>
+<p>
+	{LANGUAGE_DICTIONARIES[$language]['about-me_paragraph_text']}
+</p>
 
 <style>
-	.scrollable {
-		height: 1000px;
-	}
-
-	.not-scrollable {
-		overflow-y: scroll;
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-		max-height: 60vh;
-	}
-
-	.not-scrollable::-webkit-scrollbar {
-		display: none;
-	}
-
 	.card-header {
 		display: grid;
 		grid-template-columns: 1fr 0.3fr;

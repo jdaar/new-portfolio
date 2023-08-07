@@ -18,60 +18,34 @@
 	<title>{LANGUAGE_DICTIONARIES[$language]['achievements_label']}</title>
 </svelte:head>
 
-<div
-	transition:fade={{ duration: 250, delay: 300 }}
-	class="not-scrollable"
-	on:scroll={() => goto('/contact')}
->
-	<div class="scrollable">
-		<div class="card-header">
-			<h1>
-				{LANGUAGE_DICTIONARIES[$language]['achievements_label']}
-			</h1>
-			<select bind:value={technology_filter}>
-				<option value="">{LANGUAGE_DICTIONARIES[$language]['all_text']}</option>
-				{#each AVAILABLE_TECHNOLOGIES as technology}
-					<option value={technology}>{technology}</option>
-				{/each}
-			</select>
-			<select bind:value={category_filter}>
-				<option value="">{LANGUAGE_DICTIONARIES[$language]['all_text']}</option>
-				{#each ACHIEVEMENT_CATEGORIES as category}
-					<option value={category}>{LANGUAGE_DICTIONARIES[$language][`${category}_label`]}</option>
-				{/each}
-			</select>
-		</div>
-		<div class="achievements">
-			{#each ACHIEVEMENTS.filter((v) => {
-				return ((technology_filter !== '' && v.technologies.includes(technology_filter)) || technology_filter === '') && ((category_filter !== '' && v.category === category_filter) || category_filter === '');
-			}) as achievement}
-				{#key achievement['title']}
-					<Achievement {achievement} />
-				{/key}
-			{/each}
-		</div>
-	</div>
+<div class="card-header">
+	<h1>
+		{LANGUAGE_DICTIONARIES[$language]['achievements_label']}
+	</h1>
+	<select bind:value={technology_filter}>
+		<option value="">{LANGUAGE_DICTIONARIES[$language]['all_text']}</option>
+		{#each AVAILABLE_TECHNOLOGIES as technology}
+			<option value={technology}>{technology}</option>
+		{/each}
+	</select>
+	<select bind:value={category_filter}>
+		<option value="">{LANGUAGE_DICTIONARIES[$language]['all_text']}</option>
+		{#each ACHIEVEMENT_CATEGORIES as category}
+			<option value={category}>{LANGUAGE_DICTIONARIES[$language][`${category}_label`]}</option>
+		{/each}
+	</select>
+</div>
+<div class="achievements">
+	{#each ACHIEVEMENTS.filter((v) => {
+		return ((technology_filter !== '' && v.technologies.includes(technology_filter)) || technology_filter === '') && ((category_filter !== '' && v.category === category_filter) || category_filter === '');
+	}) as achievement}
+		{#key achievement['title']}
+			<Achievement {achievement} />
+		{/key}
+	{/each}
 </div>
 
 <style>
-	.scrollable {
-		height: 1000px;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
-
-	.not-scrollable {
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		height: 100%;
-		overflow-y: scroll;
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-		max-height: 60vh;
-	}
-
 	.achievements {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -79,10 +53,6 @@
 		gap: 1em;
 		max-height: 40vh;
 		overflow-y: scroll;
-	}
-
-	.not-scrollable::-webkit-scrollbar {
-		display: none;
 	}
 
 	@media (max-width: 1024px) {
