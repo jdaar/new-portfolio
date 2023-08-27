@@ -49,7 +49,7 @@
 		$modal_open = false;
 	}}
 	><div class="image-wrapper">
-		<img class="scaled-image" src={$selected_image} alt="Selected image" />
+		<img class="scaled-image" src={$selected_image} alt="Selected project" />
 	</div></Modal
 >
 <div
@@ -97,18 +97,23 @@
 	{#if achievement.image != null && achievement.image != undefined}
 		<div class="img-gallery">
 			{#each achievement.image as image}
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-				<img
-					on:click={() => {
-						$selected_image = image.animated ?? image.still;
-						$modal_open = true;
-					}}
-					use:lazyload
-					data-src-still={image.still}
-					data-src-animated={image.animated}
-					alt="Imagen del proyecto"
-				/>
+				<div
+					class="project-image-wrapper"
+					class:play-badge={image.animated != null && image.animated != undefined}
+				>
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+					<img
+						on:click={() => {
+							$selected_image = image.animated ?? image.still;
+							$modal_open = true;
+						}}
+						use:lazyload
+						data-src-still={image.still}
+						data-src-animated={image.animated}
+						alt="Imagen del proyecto"
+					/>
+				</div>
 			{/each}
 		</div>
 	{/if}
@@ -130,12 +135,48 @@
 		width: auto;
 	}
 
+	.project-image-wrapper {
+		position: relative;
+	}
+
 	.image-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 100%;
 		height: 100%;
+	}
+
+	.play-badge > img {
+		border: 2px solid;
+		animation: breathing-border 5s ease-in-out infinite;
+	}
+
+	@keyframes breathing-border {
+		0% {
+			border-color: var(--accent-color);
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(255, 226, 182, 0.5);
+			-moz-box-shadow: 0px 0px 10px 0px rgba(255, 226, 182, 0.5);
+			box-shadow: 0px 0px 10px 0px rgba(255, 226, 182, 0.5);
+		}
+		30% {
+			border-color: #1d1e22;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+		90% {
+			border-color: #1d1e22;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+		100% {
+			border-color: var(--accent-color);
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(255, 226, 182, 0.5);
+			-moz-box-shadow: 0px 0px 10px 0px rgba(255, 226, 182, 0.5);
+			box-shadow: 0px 0px 10px 0px rgba(255, 226, 182, 0.5);
+		}
 	}
 
 	.image-wrapper > img {
