@@ -15,6 +15,10 @@ import unhorario_1 from '$lib/assets/unhorario_1.png';
 import unhorario_2 from '$lib/assets/unhorario_2.png';
 import alertbud_1 from '$lib/assets/alertbud_1.png';
 import alertbud_2 from '$lib/assets/alertbud_2.png';
+import careerpal_1 from '$lib/assets/careerpal_1.png';
+import careerpal_2 from '$lib/assets/careerpal_2.png';
+import careerpal_3 from '$lib/assets/careerpal_3.png';
+import careerpal_4 from '$lib/assets/careerpal_4.png';
 import demo_target from '$lib/assets/demo_target.gif';
 import demo_unhorario from '$lib/assets/demo_unhorario.gif';
 
@@ -24,10 +28,11 @@ export const ACHIEVEMENT_CATEGORIES = ['project', 'enterprise'];
 
 export const ACHIEVEMENTS: Array<Achievement> = [
 	{
-		title: 'proctorlms',
-		technologies: ['Python', 'Svelte', 'Typescript', 'Django'],
+		title: 'unhorario',
+		technologies: ['Vue', 'Typescript', 'Pinia'],
 		category: 'project',
-		image: [{ animated: demo_proctorlms, still: proctorlms_1 }]
+		href: 'https://unhorario.jasprilla.me/',
+		image: [{ animated: demo_unhorario, still: unhorario_1 }, { still: unhorario_2 }]
 	},
 	{
 		title: 'fsbuddy',
@@ -46,7 +51,13 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		title: 'careerpal',
 		technologies: ['Svelte', 'Typescript', 'MongoDB', 'SQL Server', 'Puppeteer'],
 		category: 'project',
-		href: 'https://github.com/jdaar/CareerPal'
+		href: 'https://github.com/jdaar/CareerPal',
+		image: [
+			{ still: careerpal_1 },
+			{ still: careerpal_2 },
+			{ still: careerpal_3 },
+			{ still: careerpal_4 }
+		]
 	},
 	{
 		title: 'chordsapp',
@@ -56,11 +67,10 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		image: [{ animated: demo_chords, still: chords_1 }, { still: chords_2 }]
 	},
 	{
-		title: 'unhorario',
-		technologies: ['Vue', 'Typescript', 'Pinia'],
+		title: 'proctorlms',
+		technologies: ['Python', 'Svelte', 'Typescript', 'Django'],
 		category: 'project',
-		href: 'https://unhorario.jasprilla.me/',
-		image: [{ animated: demo_unhorario, still: unhorario_1 }, { still: unhorario_2 }]
+		image: [{ animated: demo_proctorlms, still: proctorlms_1 }]
 	},
 	{
 		title: 'alertbud',

@@ -41,7 +41,7 @@
 			<Achievement {achievement} />
 		{/key}
 	{/each}
-	<div style="height: 10vh" />
+	<div style="height: 30vh" />
 </div>
 
 <style>
