@@ -52,7 +52,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-row: auto;
 		gap: 1em;
-		max-height: 60vh;
+		max-height: 50vh;
 		overflow-y: scroll;
 	}
 
