@@ -2,6 +2,7 @@ import type { Language, LanguageDictionary } from '$lib/@types';
 
 const es_language_dictionary: LanguageDictionary = {
 	'about-me_label': 'Sobre mi',
+	prices_label: 'Calculadora de precios',
 	achievements_label: 'Mis logros',
 	contact_label: 'Como contactarme',
 	continue_label: 'Continuar',
@@ -12,7 +13,11 @@ const es_language_dictionary: LanguageDictionary = {
 	project_label: 'Projectos',
 	enterprise_label: 'Empresariales',
 	'goto-linkedin_label': 'Ir a Linkedin',
-	'goto-github_label': 'Ir a Github'
+	'goto-github_label': 'Ir a Github',
+	'metric-technology_label': 'Tecnologias frecuentes',
+	'metric-category_label': 'Proyectos registrados',
+	'modal-image_label': 'Imagen',
+	'contact-subtitle_label': '¿Tienes algun problema de negocio que desees solucionar con Software?'
 };
 
 const es_language_achievements = {
@@ -27,13 +32,13 @@ const es_language_achievements = {
 	trackpod: 'Trackpod, recoleccion de POD (Pruebas de entrega)',
 	cartera: 'Automatizacion para la segmentacion de la cartera',
 	seguimiento: 'Automatizacion para extraccion de metricas a partir de actividad en Power Platform',
-	targetdireccional:
-		'Target Direccional, calculo de metricas y guardado de informacion de excavaciones'
+	targetdireccional: 'Target Direccional, calculo de metricas y guardado de informacion de excavaciones'
 };
 
 const en_language_dictionary: LanguageDictionary = {
 	'about-me_label': 'About me',
 	achievements_label: 'My achievements',
+	prices_label: 'Price calculator',
 	contact_label: 'Contact me',
 	continue_label: 'Continue',
 	'about-me_subtitle_text': 'Fullstack developer',
@@ -43,7 +48,11 @@ const en_language_dictionary: LanguageDictionary = {
 	project_label: 'Project',
 	enterprise_label: 'Enterprise',
 	'goto-linkedin_label': 'Go to Linkedin',
-	'goto-github_label': 'Go to Github'
+	'goto-github_label': 'Go to Github',
+	'metric-technology_label': 'Frequent technologies',
+	'metric-category_label': 'Registered projects',
+	'modal-image_label': 'Image',
+	'contact-subtitle_label': 'Have any business problem you want to fix with Software?'
 };
 
 const en_language_achievements = {

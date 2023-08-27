@@ -9,6 +9,7 @@
 	--title-size: calc(1.5rem + (1vw - 0.08em) * 0.7);
 	--subtitle-size: calc(1.3rem + (1vw - 0.48em) * 0.7);
 	--text-size: calc(1.2rem + (1vw - 0.8em) * 0.7);
+	--small-size: 16px;
 }
 
 * {
@@ -45,7 +46,7 @@ button {
 	font-weight: 600;
 	height: 2.5em;
 	max-height: 2.5em;
-	font-size: var(--text-size);
+	font-size: var(--small-size);
 }
 
 button:hover {

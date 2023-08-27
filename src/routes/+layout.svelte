@@ -9,7 +9,6 @@
 	import type { Language } from '$lib/@types';
 	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
 	import Analytics from '$lib/components/analytics.svelte';
-	import { fade } from 'svelte/transition';
 
 	let language = writable<Language>('es');
 	if (browser) {
@@ -98,9 +97,12 @@
 		<ul>
 			{#each Object.keys(routes) as route}
 				<li>
-					<a href={route} class:selected={route == $page.url.pathname}>
+					<a href={route} class:selected={route == $page.url.pathname} class:highlight={route == '/contact'}>
 						{LANGUAGE_DICTIONARIES[$language][routes[route]['label']]}
 					</a>
+					{#if route == '/contact'} 
+						<p class="subtitle">{LANGUAGE_DICTIONARIES[$language]['contact-subtitle_label']}
+					{/if}
 				</li>
 			{/each}
 			<li class="language">
@@ -116,6 +118,18 @@
 </div>
 
 <style>
+	.highlight {
+		color: var(--secondary-accent-color)
+	}
+
+	.subtitle {
+		font-weight: 400;
+		margin-top: 0;
+		color: #646464;
+		font-size: var(--small-size);
+		display: block;
+	}
+
 	.scrollable {
 		height: 1000px;
 		margin: 0;

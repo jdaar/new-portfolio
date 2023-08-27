@@ -82,6 +82,11 @@
 </div>
 
 <style>
+	h1 {
+		margin: 0;
+		margin-bottom: 0.5em;
+	}
+
 	.accent-text {
 		border: 2px solid var(--border-color);
 		color: var(--foreground-color);
@@ -104,8 +109,7 @@
 		.social-networks {
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr 1fr 1fr;
-			max-height: 40vh;
-			overflow-y: scroll;
+			max-height: 50vh;
 		}
 	}
 

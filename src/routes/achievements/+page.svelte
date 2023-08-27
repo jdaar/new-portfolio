@@ -51,7 +51,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-row: auto;
 		gap: 1em;
-		max-height: 40vh;
+		max-height: 60vh;
 		overflow-y: scroll;
 	}
 
@@ -62,7 +62,7 @@
 	}
 
 	.card-header {
-		margin-bottom: 2em;
+		margin-bottom: 0.5em;
 		display: grid;
 		grid-template-columns: 0.15fr 0.15fr;
 		grid-template-rows: 1fr 2.5em;
@@ -76,10 +76,13 @@
 		border-radius: 5px;
 		padding: 0.15em;
 		padding-left: 0.5em;
-		font-size: var(--text-size);
+		min-width: 125px;
+		font-size: var(--small-size);
 	}
 
 	h1 {
 		grid-column: span 4;
+		margin-top: 0;
+		margin-bottom: .25em;
 	}
 </style>
