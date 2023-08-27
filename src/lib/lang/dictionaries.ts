@@ -32,7 +32,8 @@ const es_language_achievements = {
 	trackpod: 'Trackpod, recoleccion de POD (Pruebas de entrega)',
 	cartera: 'Automatizacion para la segmentacion de la cartera',
 	seguimiento: 'Automatizacion para extraccion de metricas a partir de actividad en Power Platform',
-	targetdireccional: 'Target Direccional, calculo de metricas y guardado de informacion de excavaciones'
+	targetdireccional:
+		'Target Direccional, calculo de metricas y guardado de informacion de excavaciones'
 };
 
 const en_language_dictionary: LanguageDictionary = {

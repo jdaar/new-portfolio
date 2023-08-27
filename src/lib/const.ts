@@ -11,10 +11,10 @@ import target_2 from '$lib/assets/target_2.png';
 import target_3 from '$lib/assets/target_3.png';
 import chords_1 from '$lib/assets/chords_1.png';
 import chords_2 from '$lib/assets/chords_2.png';
-import unhorario_1 from '$lib/assets/unhorario_1.png'
-import unhorario_2 from '$lib/assets/unhorario_2.png'
-import alertbud_1 from '$lib/assets/alertbud_1.png'
-import alertbud_2 from '$lib/assets/alertbud_2.png'
+import unhorario_1 from '$lib/assets/unhorario_1.png';
+import unhorario_2 from '$lib/assets/unhorario_2.png';
+import alertbud_1 from '$lib/assets/alertbud_1.png';
+import alertbud_2 from '$lib/assets/alertbud_2.png';
 import demo_target from '$lib/assets/demo_target.gif';
 import demo_unhorario from '$lib/assets/demo_unhorario.gif';
 
@@ -40,7 +40,7 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		title: 'targetdireccional',
 		technologies: ['React', 'React Native', 'Typescript', 'Firebase', 'Redux'],
 		category: 'enterprise',
-		image: [{ animated: demo_target, still: target_1}, {still: target_2}, {still: target_3}]
+		image: [{ animated: demo_target, still: target_1 }, { still: target_2 }, { still: target_3 }]
 	},
 	{
 		title: 'careerpal',
@@ -53,21 +53,21 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		technologies: ['Svelte', 'Typescript'],
 		category: 'project',
 		href: 'https://chord.jasprilla.me/',
-		image: [{ animated: demo_chords, still: chords_1}, {still: chords_2}]
+		image: [{ animated: demo_chords, still: chords_1 }, { still: chords_2 }]
 	},
 	{
 		title: 'unhorario',
 		technologies: ['Vue', 'Typescript', 'Pinia'],
 		category: 'project',
 		href: 'https://unhorario.jasprilla.me/',
-		image: [{ animated: demo_unhorario, still: unhorario_1}, {still: unhorario_2}]
+		image: [{ animated: demo_unhorario, still: unhorario_1 }, { still: unhorario_2 }]
 	},
 	{
 		title: 'alertbud',
 		technologies: ['Go', 'Typescript', 'Svelte', 'MongoDB'],
 		category: 'project',
 		href: 'https://www.alertbud.co/',
-		image: [{ animated: demo_alertbud, still: alertbud_1 }, {still: alertbud_2}]
+		image: [{ animated: demo_alertbud, still: alertbud_1 }, { still: alertbud_2 }]
 	},
 	{
 		title: 'sapb1connector',
@@ -93,7 +93,7 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		title: 'seguimiento',
 		technologies: ['Python', 'Power Platform'],
 		category: 'enterprise'
-	},
+	}
 ];
 
 export const AVAILABLE_TECHNOLOGIES = [

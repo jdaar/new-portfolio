@@ -61,18 +61,16 @@
 		}}>{$language == 'es' ? `🇺🇸` : `🇪🇸`}</button
 	>
 	<div class="main-content">
-		<div
-			class="content-slot"
-		>
-		 	{#key $page.url.pathname}
-			<div
-				class="not-scrollable"
-				on:scroll={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
-			>
-				<div class="scrollable" >
-					<slot />
+		<div class="content-slot">
+			{#key $page.url.pathname}
+				<div
+					class="not-scrollable"
+					on:scroll={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
+				>
+					<div class="scrollable">
+						<slot />
+					</div>
 				</div>
-			</div>
 			{/key}
 		</div>
 		<div class="continue">
@@ -97,12 +95,17 @@
 		<ul>
 			{#each Object.keys(routes) as route}
 				<li>
-					<a href={route} class:selected={route == $page.url.pathname} class:highlight={route == '/contact'}>
+					<a
+						href={route}
+						class:selected={route == $page.url.pathname}
+						class:highlight={route == '/contact'}
+					>
 						{LANGUAGE_DICTIONARIES[$language][routes[route]['label']]}
 					</a>
-					{#if route == '/contact'} 
-						<p class="subtitle">{LANGUAGE_DICTIONARIES[$language]['contact-subtitle_label']}
-					{/if}
+					{#if route == '/contact'}
+						<p class="subtitle">
+							{LANGUAGE_DICTIONARIES[$language]['contact-subtitle_label']}
+						</p>{/if}
 				</li>
 			{/each}
 			<li class="language">
@@ -119,7 +122,7 @@
 
 <style>
 	.highlight {
-		color: var(--secondary-accent-color)
+		color: var(--secondary-accent-color);
 	}
 
 	.subtitle {
@@ -151,7 +154,6 @@
 	.not-scrollable::-webkit-scrollbar {
 		display: none;
 	}
-
 
 	.main-container {
 		display: grid;

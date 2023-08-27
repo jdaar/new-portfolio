@@ -47,8 +47,9 @@
 	visible={$modal_open}
 	close_fn={() => {
 		$modal_open = false;
-	}}><div class="image-wrapper">
-		<img class="scaled-image" src={$selected_image} alt="Selected image"/>
+	}}
+	><div class="image-wrapper">
+		<img class="scaled-image" src={$selected_image} alt="Selected image" />
 	</div></Modal
 >
 <div

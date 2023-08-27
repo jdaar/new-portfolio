@@ -1,12 +1,10 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
 	import { getContext } from 'svelte';
 	import type { Writable } from 'svelte/store';
 	import Achievement from '$lib/components/achievement.svelte';
 	import type { Language } from '$lib/@types';
 	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
 	import { ACHIEVEMENTS, ACHIEVEMENT_CATEGORIES, AVAILABLE_TECHNOLOGIES } from '$lib/const';
-	import { goto } from '$app/navigation';
 
 	let language = getContext('language') as Writable<Language>;
 
@@ -84,6 +82,6 @@
 	h1 {
 		grid-column: span 4;
 		margin-top: 0;
-		margin-bottom: .25em;
+		margin-bottom: 0.25em;
 	}
 </style>

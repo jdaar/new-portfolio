@@ -18,7 +18,7 @@ export type Achievement = {
 	image?: Array<ImageDemo>;
 };
 
-export type ImageDemo = { still: string, animated?: string }
+export type ImageDemo = { still: string; animated?: string };
 
 export type Language = (typeof AVAILABLE_LANGUAGES)[number];
 export type LanguageToken = (typeof LANGUAGE_TOKENS)[number];
