@@ -74,9 +74,14 @@
 			{/key}
 		</div>
 		<div class="continue">
-			<button on:click={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
-				>{LANGUAGE_DICTIONARIES[$language]['continue_label']}</button
-			>
+			<div>
+				<button on:click={() => goto(routes[$page.url.pathname]['next'] ?? $page.url.pathname)}
+					>{LANGUAGE_DICTIONARIES[$language]['continue_label']}</button
+				>
+				<button on:click={() => window.open('https://www.linkedin.com/in/jasprilla/', '_blank')}>
+					{LANGUAGE_DICTIONARIES[$language]['goto-linkedin_label']}
+				</button>
+			</div>
 			<svg
 				width="24"
 				height="30"
@@ -203,10 +208,6 @@
 
 	.language {
 		grid-row: 5;
-	}
-
-	.continue > button {
-		height: 100%;
 	}
 
 	.content-slot {
