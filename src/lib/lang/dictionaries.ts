@@ -33,7 +33,8 @@ const es_language_achievements = {
 	cartera: 'Automatizacion para la segmentacion de la cartera',
 	seguimiento: 'Automatizacion para extraccion de metricas a partir de actividad en Power Platform',
 	targetdireccional:
-		'Target Direccional, calculo de metricas y guardado de informacion de excavaciones'
+		'Target Direccional, calculo de metricas y guardado de informacion de excavaciones',
+	clip: 'Clip, nube y gestion del portapapeles basado en nodos'
 };
 
 const en_language_dictionary: LanguageDictionary = {
@@ -68,7 +69,8 @@ const en_language_achievements = {
 	trackpod: 'Trackpod, collect Proof of deliveries',
 	cartera: 'Portfolio segmentation automation',
 	seguimiento: 'Automation of extraction of metrics from activity in Power Platform',
-	targetdireccional: 'Target Direccional, calculate metrics and save data from excavations'
+	targetdireccional: 'Target Direccional, calculate metrics and save data from excavations',
+	clip: 'Clip, clipboard management and cloud based on nodes'
 };
 
 type LanguageDictionaries = {

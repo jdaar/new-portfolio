@@ -19,7 +19,11 @@ import careerpal_1 from '$lib/assets/careerpal_1.png';
 import careerpal_2 from '$lib/assets/careerpal_2.png';
 import careerpal_3 from '$lib/assets/careerpal_3.png';
 import careerpal_4 from '$lib/assets/careerpal_4.png';
+import clip_1 from '$lib/assets/clip_1.png';
+import clip_2 from '$lib/assets/clip_2.png';
+import clip_3 from '$lib/assets/clip_3.png';
 import demo_target from '$lib/assets/demo_target.gif';
+import demo_clip from '$lib/assets/demo_clip.gif';
 import demo_unhorario from '$lib/assets/demo_unhorario.gif';
 
 export const LS_LANGUAGE_KEY = 'language';
@@ -33,6 +37,13 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		category: 'project',
 		href: 'https://unhorario.jasprilla.me/',
 		image: [{ animated: demo_unhorario, still: unhorario_1 }, { still: unhorario_2 }]
+	},
+	{
+		title: 'clip',
+		technologies: ['Svelte', 'Typescript', 'Firebase'],
+		category: 'project',
+		href: 'https://clip.jasprilla.me/',
+		image: [{ animated: demo_clip, still: clip_1 }, { still: clip_2 }, { still: clip_3 }]
 	},
 	{
 		title: 'fsbuddy',
