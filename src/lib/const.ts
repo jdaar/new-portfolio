@@ -22,6 +22,18 @@ import careerpal_4 from '$lib/assets/careerpal_4.png';
 import clip_1 from '$lib/assets/clip_1.png';
 import clip_2 from '$lib/assets/clip_2.png';
 import clip_3 from '$lib/assets/clip_3.png';
+import trackpod_1 from '$lib/assets/trackpod_1.png';
+import trackpod_2 from '$lib/assets/trackpod_2.png';
+import trackpod_3 from '$lib/assets/trackpod_3.png';
+import trackpod_4 from '$lib/assets/trackpod_4.png';
+import trackpod_5 from '$lib/assets/trackpod_5.png';
+import trackpod_6 from '$lib/assets/trackpod_6.png';
+import trackpod_7 from '$lib/assets/trackpod_7.png';
+import trackpod_8 from '$lib/assets/trackpod_8.png';
+import trackpod_9 from '$lib/assets/trackpod_9.png';
+import trackpod_10 from '$lib/assets/trackpod_10.png';
+import sap_connector_1 from '$lib/assets/sap_connector_1.png';
+import sap_connector_2 from '$lib/assets/sap_connector_2.png';
 import demo_target from '$lib/assets/demo_target.gif';
 import demo_clip from '$lib/assets/demo_clip.gif';
 import demo_unhorario from '$lib/assets/demo_unhorario.gif';
@@ -93,7 +105,8 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 	{
 		title: 'sapb1connector',
 		technologies: ['C#', '.NET', 'SQL Server'],
-		category: 'enterprise'
+		category: 'enterprise',
+		image: [{ still: sap_connector_1 }, { still: sap_connector_2 }]
 	},
 	{
 		title: 'fpkjobs',
@@ -103,7 +116,19 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 	{
 		title: 'trackpod',
 		technologies: ['NestJS', 'React', 'Typescript', 'MongoDB'],
-		category: 'enterprise'
+		category: 'enterprise',
+		image: [
+			{ still: trackpod_1 },
+			{ still: trackpod_2 },
+			{ still: trackpod_3 },
+			{ still: trackpod_4 },
+			{ still: trackpod_5 },
+			{ still: trackpod_6 },
+			{ still: trackpod_7 },
+			{ still: trackpod_8 },
+			{ still: trackpod_9 },
+			{ still: trackpod_10 }
+		]
 	},
 	{
 		title: 'cartera',
