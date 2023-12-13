@@ -159,11 +159,8 @@
 	}
 
 	.continue {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 0.5em;
-		grid-template-rows: 1fr 1fr;
-		justify-items: center;
+		display: flex;
+		justify-content: center;
 		align-items: center;
 		width: 100%;
 	}
