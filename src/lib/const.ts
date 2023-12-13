@@ -34,6 +34,10 @@ import trackpod_9 from '$lib/assets/trackpod_9.png';
 import trackpod_10 from '$lib/assets/trackpod_10.png';
 import sap_connector_1 from '$lib/assets/sap_connector_1.png';
 import sap_connector_2 from '$lib/assets/sap_connector_2.png';
+import docs_1 from '$lib/assets/docs_1.png';
+import docs_2 from '$lib/assets/docs_2.png';
+import docs_3 from '$lib/assets/docs_3.png';
+import ns_1 from '$lib/assets/ns_1.png';
 import demo_target from '$lib/assets/demo_target.gif';
 import demo_clip from '$lib/assets/demo_clip.gif';
 import demo_unhorario from '$lib/assets/demo_unhorario.gif';
@@ -139,6 +143,18 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		title: 'seguimiento',
 		technologies: ['Python', 'Power Platform'],
 		category: 'enterprise'
+	},
+	{
+		title: 'docs',
+		technologies: ['Typescript', 'React'],
+		category: 'enterprise',
+		image: [{ still: docs_1 }, { still: docs_2 }, { still: docs_3 }]
+	},
+	{
+		title: 'ns',
+		technologies: ['Typescript', 'Puppeteer', 'Power Platform'],
+		category: 'enterprise',
+		image: [{ still: ns_1 }]
 	}
 ];
 

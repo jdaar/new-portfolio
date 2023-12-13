@@ -34,7 +34,9 @@ const es_language_achievements = {
 	seguimiento: 'Automatizacion para extraccion de metricas a partir de actividad en Power Platform',
 	targetdireccional:
 		'Target Direccional, calculo de metricas y guardado de informacion de excavaciones',
-	clip: 'Clip, nube y gestion del portapapeles basado en nodos'
+	clip: 'Clip, nube y gestion del portapapeles basado en nodos',
+	docs: 'Centro de documentacion y gestion del conocimiento para el area de TI',
+	ns: 'Automatizacion de calculo de metricas de distribuidores y notificacion de resultados'
 };
 
 const en_language_dictionary: LanguageDictionary = {
@@ -70,7 +72,9 @@ const en_language_achievements = {
 	cartera: 'Portfolio segmentation automation',
 	seguimiento: 'Automation of extraction of metrics from activity in Power Platform',
 	targetdireccional: 'Target Direccional, calculate metrics and save data from excavations',
-	clip: 'Clip, clipboard management and cloud based on nodes'
+	clip: 'Clip, clipboard management and cloud based on nodes',
+	docs: 'Documentation center and knowledge management for the IT area',
+	ns: 'Automation of calculation of distributor metrics and notification of results'
 };
 
 type LanguageDictionaries = {
