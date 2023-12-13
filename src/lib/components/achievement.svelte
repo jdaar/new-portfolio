@@ -133,6 +133,7 @@
 	.scaled-image {
 		height: auto;
 		width: 100%;
+		max-height: 512px;
 	}
 
 	.project-image-wrapper {
