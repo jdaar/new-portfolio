@@ -134,6 +134,7 @@
 		height: auto;
 		width: 100%;
 		max-height: 512px;
+		object-fit: contain;
 	}
 
 	.project-image-wrapper {
