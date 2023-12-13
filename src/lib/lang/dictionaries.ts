@@ -17,7 +17,9 @@ const es_language_dictionary: LanguageDictionary = {
 	'metric-technology_label': 'Tecnologias frecuentes',
 	'metric-category_label': 'Proyectos registrados',
 	'modal-image_label': 'Imagen',
-	'contact-subtitle_label': '¿Tienes algun problema de negocio que desees solucionar con Software?'
+	'contact-subtitle_label': '¿Tienes algun problema de negocio que desees solucionar con Software?',
+	technology_label: 'Tecnologia',
+	category_label: 'Categoria'
 };
 
 const es_language_achievements = {
@@ -56,7 +58,9 @@ const en_language_dictionary: LanguageDictionary = {
 	'metric-technology_label': 'Frequent technologies',
 	'metric-category_label': 'Registered projects',
 	'modal-image_label': 'Image',
-	'contact-subtitle_label': 'Have any business problem you want to fix with Software?'
+	'contact-subtitle_label': 'Have any business problem you want to fix with Software?',
+	technology_label: 'Technology',
+	category_label: 'Category'
 };
 
 const en_language_achievements = {

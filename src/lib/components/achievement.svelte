@@ -149,7 +149,26 @@
 
 	.play-badge > img {
 		border: 2px solid;
-		animation: breathing-border 5s ease-in-out infinite;
+		border-color: var(--accent-color);
+	}
+
+	.play-badge {
+		position: relative;
+	}
+
+	.play-badge::after {
+		content: '▶';
+		position: absolute;
+		bottom: 1.5em;
+		right: 2em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		background-color: var(--accent-color);
+		color: var(--border-color);
+		border-radius: 5px;
 	}
 
 	@keyframes breathing-border {

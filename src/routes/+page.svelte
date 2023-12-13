@@ -124,7 +124,7 @@
 	.content {
 		overflow-y: scroll;
 		height: 100%;
-		max-height: 60vh;
+		max-height: 75vh;
 	}
 
 	.graphics {

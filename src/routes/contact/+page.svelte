@@ -95,7 +95,7 @@
 
 	.social-networks {
 		height: 100%;
-		max-height: 50vh;
+		max-height: 70vh;
 		display: grid;
 		gap: 1em;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -109,7 +109,7 @@
 		.social-networks {
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr 1fr 1fr;
-			max-height: 50vh;
+			max-height: 70vh;
 		}
 	}
 
