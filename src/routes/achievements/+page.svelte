@@ -60,6 +60,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-row: auto;
 		gap: 1em;
+		padding-right: 10px; 
 		max-height: 67.5vh;
 		overflow-y: scroll;
 	}
