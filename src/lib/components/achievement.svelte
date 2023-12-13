@@ -131,8 +131,8 @@
 	}
 
 	.scaled-image {
-		height: 400px;
-		width: auto;
+		height: auto;
+		width: 100%;
 	}
 
 	.project-image-wrapper {
