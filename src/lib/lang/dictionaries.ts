@@ -30,7 +30,7 @@ const es_experience = {
 		title: 'Desarrollador Fullstack',
 		description: `
 $+ Automatización de la cadena de suministro para todos los documentos contables (+30 horas/semana de trabajo ahorradas, distribuidas entre 6 agentes 📈)🌟.
-$+ Creación de productos a nivel de dominio que potenciaron al equipo de desarrollo para crear nuevas automatizaciones (+3 automatizaciones creadas utilizando productos a nivel de dominio 🤖)🌟.
+$+ Creación de productos a nivel de dominio que potenciaron al equipo de desarrollo para crear nuevas automatizaciones (+5 automatizaciones creadas utilizando productos a nivel de dominio 🤖)🌟.
 $+ Migración y optimización de una aplicación empresarial interna crítica fuera de una plataforma propietaria (Reduciendo significativamente los tiempos de carga y disminuyendo los costos casi a 0 💸).
 $+ Implementación de observabilidad y alertas para aplicaciones empresariales fundamentales (Reduciendo el tiempo de resolución de tickets aproximadamente en 0.5 días 🔎).
 		`
@@ -50,7 +50,7 @@ const en_experience = {
 		title: 'Fullstack developer',
 		description: `
 $+ Automation of the supply chain for all accounting documents (+30 hrs/week of work saved, distributed across 6 agents 📈)🌟.
-$+ Creation of domain-level products that empowered the development team to create new automations (+3 automations created using domain-level products 🤖)🌟.
+$+ Creation of domain-level products that empowered the development team to create new automations (+5 automations created using domain-level products 🤖)🌟.
 $+ Migration and optimization of a critical internal business app from a proprietary platform (Significantly reduced load times and decreased costs almost to 0 💸).
 $+ Implemented observability and alerts for core business apps (Reduced the ticket resolution time by approximately 0.5 days 🔎).
 		`
