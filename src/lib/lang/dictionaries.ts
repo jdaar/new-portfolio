@@ -76,7 +76,7 @@ const es_language_achievements = {
 	trackpod: 'Trackpod',
 	cartera: 'Automatizacion de cartera',
 	seguimiento: 'Extraccion de metricas',
-	targetdireccional: 'Target Direccional',
+	targetdireccional: 'iTarget',
 	clip: 'Clip',
 	docs: 'Centro de documentacion',
 	ns: 'Nivel de servicio',
@@ -113,7 +113,7 @@ $+ Visualizacion de los datos extraidos en un dashboard de Power BI 🌟
 $+ Seguimiento detallado de las acciones realizadas por los usuarios en Microsoft Teams
 `,
 	targetdireccional: `
-Calculo de metricas y guardado de informacion de excavaciones
+Calculo de metricas y guardado de informacion de excavaciones para perforacion direccional
 $+ Visualizacion de metricas y ayuda en la toma de decisiones 🌟
 $+ Extraccion de datos de excavaciones almacenados offline 
 $+ Sincronizacion de los datos de excavacion y calculo de metricas 
@@ -192,7 +192,7 @@ $+ Secure connection with SAP B1 using SAP B1 DI API
 	$+ Detailed tracking of actions performed by users in Microsoft Teams
 	`,
 	targetdireccional: `
-	Calculation of metrics and storage of excavation information
+	Calculation of metrics and storage of excavation information for directional drilling
 	$+ Visualization of metrics and assistance in decision-making 🌟
 	$+ Extraction of excavation data stored offline
 	$+ Synchronization of excavation data and metric calculation
@@ -226,7 +226,7 @@ const en_language_achievements = {
 	trackpod: 'Trackpod',
 	cartera: 'Portfolio segmentation automation',
 	seguimiento: 'Metric extraction automation',
-	targetdireccional: 'Target Direccional',
+	targetdireccional: 'iTarget',
 	clip: 'Clip',
 	docs: 'Documentation center',
 	ns: 'Service level',
