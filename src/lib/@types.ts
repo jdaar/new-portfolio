@@ -11,7 +11,6 @@ export type AchievementCategory = (typeof ACHIEVEMENT_CATEGORIES)[number];
 
 export type Achievement = {
 	title: string;
-	description?: string;
 	technologies: Array<Technology>;
 	href?: string;
 	category: AchievementCategory;

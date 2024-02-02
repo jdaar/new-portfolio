@@ -77,7 +77,7 @@
 				fill="white"
 			/>
 		</svg>
-		<button disabled class="accent-text">jhonatandaar@gmail.com</button>
+		<button disabled class="accent-text">hi@jhonatan.tech</button>
 	</div>
 </div>
 
@@ -133,5 +133,9 @@
 	.network > * {
 		align-self: center;
 		justify-self: center;
+	}
+
+	button {
+		border: #272727 1px solid;
 	}
 </style>

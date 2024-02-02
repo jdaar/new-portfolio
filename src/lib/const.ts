@@ -48,63 +48,17 @@ export const ACHIEVEMENT_CATEGORIES = ['project', 'enterprise'];
 
 export const ACHIEVEMENTS: Array<Achievement> = [
 	{
-		title: 'unhorario',
-		technologies: ['Vue', 'Typescript', 'Pinia'],
-		category: 'project',
-		href: 'https://unhorario.jasprilla.me/',
-		image: [{ animated: demo_unhorario, still: unhorario_1 }, { still: unhorario_2 }]
-	},
-	{
-		title: 'clip',
-		technologies: ['Svelte', 'Typescript', 'Firebase'],
-		category: 'project',
-		href: 'https://clip.jasprilla.me/',
-		image: [{ animated: demo_clip, still: clip_1 }, { still: clip_2 }, { still: clip_3 }]
-	},
-	{
-		title: 'fsbuddy',
-		technologies: ['C#', '.NET'],
-		category: 'project',
-		href: 'https://github.com/jdaar/FsBuddy',
-		image: [{ animated: demo_fsbuddy, still: fsbuddy_1 }, { still: fsbuddy_2 }]
-	},
-	{
 		title: 'targetdireccional',
 		technologies: ['React', 'React Native', 'Typescript', 'Firebase', 'Redux'],
 		category: 'enterprise',
 		image: [{ animated: demo_target, still: target_1 }, { still: target_2 }, { still: target_3 }]
 	},
 	{
-		title: 'careerpal',
-		technologies: ['Svelte', 'Typescript', 'MongoDB', 'SQL Server', 'Puppeteer'],
+		title: 'unhorario',
+		technologies: ['Vue', 'Typescript', 'Pinia'],
 		category: 'project',
-		href: 'https://github.com/jdaar/CareerPal',
-		image: [
-			{ still: careerpal_1 },
-			{ still: careerpal_2 },
-			{ still: careerpal_3 },
-			{ still: careerpal_4 }
-		]
-	},
-	{
-		title: 'chordsapp',
-		technologies: ['Svelte', 'Typescript'],
-		category: 'project',
-		href: 'https://chord.jasprilla.me/',
-		image: [{ animated: demo_chords, still: chords_1 }, { still: chords_2 }]
-	},
-	{
-		title: 'proctorlms',
-		technologies: ['Python', 'Svelte', 'Typescript', 'Django'],
-		category: 'project',
-		image: [{ animated: demo_proctorlms, still: proctorlms_1 }]
-	},
-	{
-		title: 'alertbud',
-		technologies: ['Go', 'Typescript', 'Svelte', 'MongoDB'],
-		category: 'project',
-		href: 'https://www.alertbud.co/',
-		image: [{ animated: demo_alertbud, still: alertbud_1 }, { still: alertbud_2 }]
+		href: 'https://unhorario.jhonatan.tech/',
+		image: [{ animated: demo_unhorario, still: unhorario_1 }, { still: unhorario_2 }]
 	},
 	{
 		title: 'sapb1connector',
@@ -133,6 +87,45 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 			{ still: trackpod_9 },
 			{ still: trackpod_10 }
 		]
+	},
+	{
+		title: 'clip',
+		technologies: ['Svelte', 'Typescript', 'Firebase'],
+		category: 'project',
+		href: 'https://clip.jhonatan.tech/',
+		image: [{ animated: demo_clip, still: clip_1 }, { still: clip_2 }, { still: clip_3 }]
+	},
+	{
+		title: 'fsbuddy',
+		technologies: ['C#', '.NET'],
+		category: 'project',
+		href: 'https://github.com/jdaar/FsBuddy',
+		image: [{ animated: demo_fsbuddy, still: fsbuddy_1 }, { still: fsbuddy_2 }]
+	},
+	{
+		title: 'careerpal',
+		technologies: ['Svelte', 'Typescript', 'MongoDB', 'SQL Server', 'Puppeteer'],
+		category: 'project',
+		href: 'https://github.com/jdaar/CareerPal',
+		image: [
+			{ still: careerpal_1 },
+			{ still: careerpal_2 },
+			{ still: careerpal_3 },
+			{ still: careerpal_4 }
+		]
+	},
+	{
+		title: 'chordsapp',
+		technologies: ['Svelte', 'Typescript'],
+		category: 'project',
+		href: 'https://chord.jhonatan.tech/',
+		image: [{ animated: demo_chords, still: chords_1 }, { still: chords_2 }]
+	},
+	{
+		title: 'alertbud',
+		technologies: ['Go', 'Typescript', 'Svelte', 'MongoDB'],
+		category: 'project',
+		image: [{ animated: demo_alertbud, still: alertbud_1 }, { still: alertbud_2 }]
 	},
 	{
 		title: 'cartera',

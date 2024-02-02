@@ -56,15 +56,18 @@
 	class="achievement"
 	class:expanded={achievement.image != undefined && achievement.image != null}
 >
-	<div>
+	<div class="achievement-wrapper">
 		<div />
-		<h2>
-			{LANGUAGE_ACHIEVEMENTS[$language][achievement.title]}<span
+		<h2 class="achievement-title">{LANGUAGE_ACHIEVEMENTS[$language].title[achievement.title]}
+			<span
 				class="badge"
 				class:badge-secondary={achievement.category == 'enterprise'}
 				>{LANGUAGE_DICTIONARIES[$language][`${achievement.category}_label`]}</span
 			>
 		</h2>
+		<p class="achievement-description">
+			{LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title]}.
+		</p>
 		<div class="technologies">
 			{#each technologies_logos as technology}
 				<SvelteTooltip tip={technology['name']}>
@@ -122,7 +125,10 @@
 <style>
 	.actions {
 		padding-top: 1em;
-		padding-bottom: 1em;
+	}
+
+	.actions > button {
+		border: #272727 1px solid;
 	}
 
 	.img-gallery {
@@ -231,11 +237,12 @@
 		font-size: var(--text-size);
 		width: fit-content;
 		padding: 0.1em;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 		color: var(--accent-color);
 		border-radius: 1em;
-		margin-left: 1em;
+		font-size: medium;
+		margin: 0.2em;
 	}
 
 	.badge-secondary {
@@ -263,15 +270,33 @@
 
 	.achievement {
 		border: 2px solid var(--border-color);
+		height: fit-content;
 		display: grid;
 		grid-template-columns: 90%;
 		justify-content: center;
 		align-items: center;
-		min-height: 10em;
 		gap: 0.1em;
 		border-radius: 5px;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
+	}
+
+	.achievement-title {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		height: fit-content;
+		display: flex;
+		gap: 0.2em;
+		flex-wrap: wrap;
+	}
+
+	.achievement-description {
+		color: #fdfdfdd2;
+	}
+
+	.achievement-wrapper {
+		width: 100%;
+		padding-top: 1em;
+		padding-bottom: 1em;
 	}
 
 	.technologies {

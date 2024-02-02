@@ -15,7 +15,7 @@
 
 * {
 	color: var(--foreground-color);
-	font-family: 'Inter', sans-serif;
+	font-family: 'Inter', 'Noto Color Emoji', sans-serif;
 }
 
 body,
@@ -44,7 +44,7 @@ button {
 	margin: 0;
 	padding-left: 25px;
 	padding-right: 25px;
-	font-weight: 600;
+	font-weight: 500;
 	height: 2.5em;
 	max-height: 2.5em;
 	font-size: var(--small-size);

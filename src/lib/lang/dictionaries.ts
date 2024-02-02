@@ -7,7 +7,7 @@ const es_language_dictionary: LanguageDictionary = {
 	contact_label: 'Como contactarme',
 	continue_label: 'Continuar',
 	'about-me_subtitle_text': 'Desarrollador Fullstack',
-	'about-me_paragraph_text': `Profesional innovador con más de 2 años de experiencia en desarrollo web full-stack, móvil y liderazgo de proyectos. Competente en desarrollo con frameworks para aplicaciones web, desarrollo para bases de datos, manejo de servidores (Linux & Windows) y configuración e implementación de herramientas para DevOps (Terraform, Github Actions, Ansible, Docker).`,
+	'about-me_paragraph_text': `Profesional con más de dos años de experiencia en desarrollo web full-stack y móvil con énfasis en automatización de procesos y de cadenas de suministro.`,
 	achievements_button_label: 'Ver mas',
 	all_text: 'Ver todos',
 	project_label: 'Personales',
@@ -23,20 +23,36 @@ const es_language_dictionary: LanguageDictionary = {
 };
 
 const es_language_achievements = {
-	proctorlms: 'ProctorLMS, LMS con WASM REPL',
-	fsbuddy: 'FSBuddy, automatizacion del sistema de archivos',
-	careerpal: 'CareerPal, extraccion de datos de ofertas laborales',
-	chordsapp: 'Acordes, visualizador de acordes y selector de intervalos',
-	unhorario: 'UNHorario, administracion de horarios academicos',
-	alertbud: 'AlertBud, envia notificaciones en multiples plataformas',
-	sapb1connector: 'Conector SAP B1, integracion con el ERP con Power Platform',
-	fpkjobs: 'FPKJobs, extraccion de metricas e integracion con Power Platform',
-	trackpod: 'Trackpod, recoleccion de POD (Pruebas de entrega)',
+	fsbuddy: 'FSBuddy',
+	careerpal: 'CareerPal',
+	chordsapp: 'Acordes',
+	unhorario: 'UNHorario',
+	alertbud: 'AlertBud',
+	sapb1connector: 'Conector SAP B1',
+	fpkjobs: 'FPKJobs',
+	trackpod: 'Trackpod',
+	cartera: 'Automatizacion de cartera',
+	seguimiento: 'Extraccion de metricas',
+	targetdireccional: 'Target Direccional',
+	clip: 'Clip',
+	docs: 'Centro de documentacion',
+	ns: 'Nivel de servicio'
+};
+
+const es_language_achievement_descriptions = {
+	fsbuddy: 'Automatizacion del sistema de archivos',
+	careerpal: 'Extraccion de datos de ofertas laborales',
+	chordsapp: 'Visualizador de acordes y selector de intervalos',
+	unhorario: 'Administracion de horarios academicos',
+	alertbud: 'Envia notificaciones en multiples plataformas',
+	sapb1connector: 'Integracion con el ERP con Power Platform',
+	fpkjobs: 'Extraccion de metricas e integracion con Power Platform',
+	trackpod: 'Recoleccion de POD (Pruebas de entrega)',
 	cartera: 'Automatizacion para la segmentacion de la cartera',
 	seguimiento: 'Automatizacion para extraccion de metricas a partir de actividad en Power Platform',
 	targetdireccional:
-		'Target Direccional, calculo de metricas y guardado de informacion de excavaciones',
-	clip: 'Clip, nube y gestion del portapapeles basado en nodos',
+		'Calculo de metricas y guardado de informacion de excavaciones',
+	clip: 'Nube y gestion del portapapeles basado en nodos',
 	docs: 'Centro de documentacion y gestion del conocimiento para el area de TI',
 	ns: 'Automatizacion de calculo de metricas de distribuidores y notificacion de resultados'
 };
@@ -48,7 +64,7 @@ const en_language_dictionary: LanguageDictionary = {
 	contact_label: 'Contact me',
 	continue_label: 'Continue',
 	'about-me_subtitle_text': 'Fullstack developer',
-	'about-me_paragraph_text': `Innovative professional with more than 2 years of experience in full-stack web development, mobile and project leadership. Proficient in development with frameworks for web applications, database development, server management (Linux & Windows) and configuration and implementation of tools for DevOps (Terraform, Github Actions, Ansible, Docker).`,
+	'about-me_paragraph_text': `Professional with more than two years of experience in full-stack web and mobile development with emphasis on process and supply chain automation.`,
 	achievements_button_label: 'See more',
 	all_text: 'Include all',
 	project_label: 'Personal',
@@ -63,31 +79,55 @@ const en_language_dictionary: LanguageDictionary = {
 	category_label: 'Category'
 };
 
-const en_language_achievements = {
-	proctorlms: 'ProctorLMS, LMS with WASM REPL',
-	fsbuddy: 'FSBuddy, filesystem automation',
-	careerpal: 'CareerPal, job posting scrapping',
-	chordsapp: 'Chords, a chord visualizator and interval selector',
-	unhorario: 'UNHorario, manage academic schedules',
-	alertbud: 'AlertBud, send notifications on multiple platforms',
-	sapb1connector: 'SAP B1 Connector, integrate with the ERP',
-	fpkjobs: 'FPKJobs, extract metrics and integrate with Power Platform',
-	trackpod: 'Trackpod, collect Proof of deliveries',
+const en_language_achievements_description = {
+	fsbuddy: 'Filesystem automation',
+	careerpal: 'Job posting scrapping',
+	chordsapp: 'A chord visualizator and interval selector',
+	unhorario: 'Manage academic schedules',
+	alertbud: 'Send notifications on multiple platforms',
+	sapb1connector: 'Integrate with the ERP',
+	fpkjobs: 'Extract metrics and integrate with Power Platform',
+	trackpod: 'Collect Proof of deliveries',
 	cartera: 'Portfolio segmentation automation',
 	seguimiento: 'Automation of extraction of metrics from activity in Power Platform',
-	targetdireccional: 'Target Direccional, calculate metrics and save data from excavations',
-	clip: 'Clip, clipboard management and cloud based on nodes',
+	targetdireccional: 'Calculate metrics and save data from excavations',
+	clip: 'Clipboard management and cloud based on nodes',
 	docs: 'Documentation center and knowledge management for the IT area',
 	ns: 'Automation of calculation of distributor metrics and notification of results'
+};
+
+const en_language_achievements = {
+	fsbuddy: 'FSBuddy',
+	careerpal: 'CareerPal',
+	chordsapp: 'Acordes',
+	unhorario: 'UNHorario',
+	alertbud: 'AlertBud',
+	sapb1connector: 'SAP B1 Connector',
+	fpkjobs: 'FPKJobs',
+	trackpod: 'Trackpod',
+	cartera: 'Portfolio segmentation automation',
+	seguimiento: 'Metric extraction automation',
+	targetdireccional: 'Target Direccional',
+	clip: 'Clip',
+	docs: 'Documentation center',
+	ns: 'Service level'
 };
 
 type LanguageDictionaries = {
 	[language in Language]: LanguageDictionary;
 };
 
-export const LANGUAGE_ACHIEVEMENTS: { [language in Language]: { [key: string]: string } } = {
-	en: en_language_achievements,
-	es: es_language_achievements
+export const LANGUAGE_ACHIEVEMENTS: { [language in Language]: {
+	description: { [key: string]: string }, title: { [key: string]: string }
+} } = {
+	en: {
+		title: en_language_achievements,
+		description: en_language_achievements_description
+	},
+	es: {
+		title: es_language_achievements,
+		description: es_language_achievement_descriptions
+	}
 };
 
 export const LANGUAGE_DICTIONARIES: LanguageDictionaries = {
