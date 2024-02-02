@@ -19,21 +19,64 @@ const es_language_dictionary: LanguageDictionary = {
 	'modal-image_label': 'Imagen',
 	'contact-subtitle_label': '¿Tienes algun problema de negocio que desees solucionar con Software?',
 	technology_label: 'Tecnologia',
-	category_label: 'Categoria'
+	category_label: 'Categoria',
+	experience_label: 'Mi experiencia',
+	'experience-related_label': 'Habilidades relacionadas',
+	'contact-first_label': 'Contactemos primero'
+};
+
+const es_experience = {
+	firplak: {
+		title: 'Desarrollador Fullstack',
+		description: `
+$+ Automatización de la cadena de suministro para todos los documentos contables (+30 horas/semana de trabajo ahorradas, distribuidas entre 6 agentes 📈)🌟.
+$+ Creación de productos a nivel de dominio que potenciaron al equipo de desarrollo para crear nuevas automatizaciones (+3 automatizaciones creadas utilizando productos a nivel de dominio 🤖)🌟.
+$+ Migración y optimización de una aplicación empresarial interna crítica fuera de una plataforma propietaria (Reduciendo significativamente los tiempos de carga y disminuyendo los costos casi a 0 💸).
+$+ Implementación de observabilidad y alertas para aplicaciones empresariales fundamentales (Reduciendo el tiempo de resolución de tickets aproximadamente en 0.5 días 🔎).
+		`
+	},
+	zanacode: {
+		title: 'Desarrollador de aplicaciones para móviles',
+		description: `
+$+ Implemente las fórmulas y la vinculación de datos requeridas por los ingenieros de Target Direccional 👩‍🔬🌟.
+$+ Mejore la estabilidad de la aplicación en dispositivos Android ✅.
+$+ Implemente el flujo de autenticación en el cliente React Native 🔒.
+		`
+	}
+};
+
+const en_experience = {
+	firplak: {
+		title: 'Fullstack developer',
+		description: `
+$+ Automation of the supply chain for all accounting documents (+30 hrs/week of work saved, distributed across 6 agents 📈)🌟.
+$+ Creation of domain-level products that empowered the development team to create new automations (+3 automations created using domain-level products 🤖)🌟.
+$+ Migration and optimization of a critical internal business app from a proprietary platform (Significantly reduced load times and decreased costs almost to 0 💸).
+$+ Implemented observability and alerts for core business apps (Reduced the ticket resolution time by approximately 0.5 days 🔎).
+		`
+	},
+	zanacode: {
+		title: 'Mobile developer',
+		description: `
+$+ Implemented the formulas and data binding required by the Target Direccional engineers 👩‍🔬🌟.
+$+ Improved app stability on Android devices ✅.
+$+ Implemented the authentication flow in the React Native client 🔒.
+		`
+	}
 };
 
 const es_language_achievements = {
 	fsbuddy: 'FSBuddy',
 	careerpal: 'CareerPal',
 	chordsapp: 'Acordes',
-	unhorario: 'UNHorario 🌟',
+	unhorario: 'UNHorario',
 	alertbud: 'AlertBud',
 	sapb1connector: 'Conector SAP B1',
 	fpkjobs: 'FPKJobs',
 	trackpod: 'Trackpod',
 	cartera: 'Automatizacion de cartera',
 	seguimiento: 'Extraccion de metricas',
-	targetdireccional: 'Target Direccional 🌟',
+	targetdireccional: 'Target Direccional',
 	clip: 'Clip',
 	docs: 'Centro de documentacion',
 	ns: 'Nivel de servicio',
@@ -112,25 +155,64 @@ const en_language_dictionary: LanguageDictionary = {
 	'modal-image_label': 'Image',
 	'contact-subtitle_label': 'Have any business problem you want to fix with Software?',
 	technology_label: 'Technology',
-	category_label: 'Category'
+	category_label: 'Category',
+	experience_label: 'My experience',
+	'experience-related_label': 'Related skills',
+	'contact-first_label': 'Let\'s contact first'
 };
 
 const en_language_achievements_description = {
-	fsbuddy: 'Filesystem automation',
-	careerpal: 'Job posting scrapping',
-	chordsapp: 'A chord visualizator and interval selector',
-	unhorario: 'Manage academic schedules',
-	alertbud: 'Send notifications on multiple platforms',
-	sapb1connector: 'Integrate with the ERP',
-	fpkjobs: 'Extract metrics and integrate with Power Platform',
-	trackpod: 'Collect Proof of deliveries',
-	cartera: 'Portfolio segmentation automation',
-	seguimiento: 'Automation of extraction of metrics from activity in Power Platform',
-	targetdireccional: 'Calculate metrics and save data from excavations',
-	clip: 'Clipboard management and cloud based on nodes',
-	docs: 'Documentation center and knowledge management for the IT area',
-	ns: 'Automation of calculation of distributor metrics and notification of results',
-	accounting: ''
+	unhorario: `
+Academic schedule management for students at the National University of Colombia
+$+ More than 1000 active users during course registration periods 🌟
+$+ More than 3000 registered courses extracted from the university platform 🌟
+	`,
+	alertbud: 'Sends notifications on multiple platforms',
+	sapb1connector: `
+Integration of ERP with Power Platform, offering a REST API for other integrations
+$+ 3 automations created using the connector as a foundation 🌟
+$+ Compatibility with Power Platform (Power Apps and Power Automate)
+$+ Secure connection with SAP B1 using SAP B1 DI API
+	`,
+
+	fsbuddy: 'File system automation',
+	careerpal: 'Extraction of job offer data',
+	chordsapp: 'Chord viewer and interval selector',
+	fpkjobs: `
+	Python library that implements a restrictive programming model enabling automation of metric extraction and integration with Power Platform
+	$+ 2 automations created using the library as a foundation 🌟
+	$+ Observability of all actions performed by the automations
+	$+ Synchronization with Power Platform and introduction of data into Dataverse
+	`,
+	trackpod: `Collection of POD (Proof of Delivery)`,
+	cartera: 'Automation for portfolio segmentation',
+	seguimiento: `
+	Automation for metric extraction based on activity in Power Platform
+	$+ Visualization of extracted data in a Power BI dashboard 🌟
+	$+ Detailed tracking of actions performed by users in Microsoft Teams
+	`,
+	targetdireccional: `
+	Calculation of metrics and storage of excavation information
+	$+ Visualization of metrics and assistance in decision-making 🌟
+	$+ Extraction of excavation data stored offline
+	$+ Synchronization of excavation data and metric calculation
+	`,
+	clip: 'Cloud and clipboard management based on nodes',
+	docs: `
+	Documentation center and knowledge management for the IT area
+	$+ Documentation of business process related to the IT area 🌟
+	$+ Documentation of software artifacts and usage guides
+	`,
+	ns: `
+	Automation of distributor metrics calculation and result notification
+	$+ Zero implementation cost with deployment on Google Cloud 💰🌟
+	$+ More than 200 reports generated monthly and distributed via email to distributors
+	`,
+	accounting: `
+	$+ More than 30 hours of work saved weekly distributed among 6 agents 💰🌟
+	$+ More than 100 approval requests for accounting documents processed monthly 🌟
+	$+ More than 10,000 emails processed annually 🌟
+	`
 };
 
 const en_language_achievements = {
@@ -148,16 +230,19 @@ const en_language_achievements = {
 	clip: 'Clip',
 	docs: 'Documentation center',
 	ns: 'Service level',
-	accounting: ''
+	accounting: 'Automation of the supply chain for accounting documents'
 };
 
 type LanguageDictionaries = {
 	[language in Language]: LanguageDictionary;
 };
 
-export const LANGUAGE_ACHIEVEMENTS: { [language in Language]: {
-	description: { [key: string]: string }, title: { [key: string]: string }
-} } = {
+export const LANGUAGE_ACHIEVEMENTS: {
+	[language in Language]: {
+		description: { [key: string]: string };
+		title: { [key: string]: string };
+	};
+} = {
 	en: {
 		title: en_language_achievements,
 		description: en_language_achievements_description
@@ -166,6 +251,11 @@ export const LANGUAGE_ACHIEVEMENTS: { [language in Language]: {
 		title: es_language_achievements,
 		description: es_language_achievement_descriptions
 	}
+};
+
+export const LANGUAGE_EXPERIENCE = {
+	es: es_experience,
+	en: en_experience
 };
 
 export const LANGUAGE_DICTIONARIES: LanguageDictionaries = {

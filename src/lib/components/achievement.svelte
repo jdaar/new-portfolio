@@ -58,26 +58,29 @@
 >
 	<div class="achievement-wrapper">
 		<div />
-		<h2 class="achievement-title">{LANGUAGE_ACHIEVEMENTS[$language].title[achievement.title]}
-			<span
-				class="badge"
-				class:badge-secondary={achievement.category == 'enterprise'}
+		<h2 class="achievement-title">
+			{LANGUAGE_ACHIEVEMENTS[$language].title[achievement.title]}
+			<span class="badge" class:badge-secondary={achievement.category == 'enterprise'}
 				>{LANGUAGE_DICTIONARIES[$language][`${achievement.category}_label`]}</span
 			>
 		</h2>
 		<p class="achievement-description">
-			{#if LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+')[0].trim().length > 0}
-			{LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+')[0].trim()}.
+			{#if LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title]
+				.split('$+')[0]
+				.trim().length > 0}
+				{LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+')[0].trim()}.
 			{/if}
 			{#if LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+').length > 1}
 				<ul>
-				{#each LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+').slice(1) as attribute}
-					{#if attribute.includes('🌟')}
-						<li class="star">{attribute.replace('🌟', '').trim()}</li>
-					{:else}
-						<li>{attribute.trim()}</li>
-					{/if}
-				{/each}
+					{#each LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title]
+						.split('$+')
+						.slice(1) as attribute}
+						{#if attribute.includes('🌟')}
+							<li class="star">{attribute.replace('🌟', '').trim()}</li>
+						{:else}
+							<li>{attribute.trim()}</li>
+						{/if}
+					{/each}
 				</ul>
 			{/if}
 		</p>
@@ -291,7 +294,7 @@
 		align-items: center;
 		gap: 0.1em;
 		border-radius: 5px;
-		grid-template-rows: repeat( auto-fit, minmax(250px, 1fr) );
+		grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
 	}
 
 	.achievement-title {
@@ -317,11 +320,11 @@
 		list-style: '🌟 ';
 	}
 
-	.achievement-description > ul> li {
+	.achievement-description > ul > li {
 		color: rgb(135, 255, 135);
 	}
 
-	.achievement-description > ul> li::after {
+	.achievement-description > ul > li::after {
 		content: '.';
 		margin: 0;
 		padding: 0;

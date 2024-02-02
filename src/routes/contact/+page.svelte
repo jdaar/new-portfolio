@@ -62,7 +62,7 @@
 				fill="white"
 			/>
 		</svg>
-		<button disabled class="accent-text">+573053023726</button>
+		<button disabled class="accent-text">{LANGUAGE_DICTIONARIES[$language]['contact-first_label']}</button>
 	</div>
 	<div class="network extended">
 		<svg

@@ -1,9 +1,7 @@
-import type { Achievement } from './@types';
+import type { Achievement, Experience } from './@types';
 import demo_alertbud from '$lib/assets/demo_alertbud.gif';
 import demo_chords from '$lib/assets/demo_chords.gif';
 import demo_fsbuddy from '$lib/assets/demo_fsbuddy.gif';
-import demo_proctorlms from '$lib/assets/demo_proctorlms.gif';
-import proctorlms_1 from '$lib/assets/proctorlms_1.png';
 import fsbuddy_1 from '$lib/assets/fsbuddy_1.png';
 import fsbuddy_2 from '$lib/assets/fsbuddy_2.png';
 import target_1 from '$lib/assets/target_1.png';
@@ -41,10 +39,48 @@ import ns_1 from '$lib/assets/ns_1.png';
 import demo_target from '$lib/assets/demo_target.gif';
 import demo_clip from '$lib/assets/demo_clip.gif';
 import demo_unhorario from '$lib/assets/demo_unhorario.gif';
+import firplak_logo from '$lib/assets/firplak.png';
+import zanacode_logo from '$lib/assets/zanacode.jpg';
 
 export const LS_LANGUAGE_KEY = 'language';
 
 export const ACHIEVEMENT_CATEGORIES = ['project', 'enterprise'];
+
+export const EXPERIENCE: Array<Experience> = [
+	{
+		label: 'firplak',
+		technologies: [
+			'C#',
+			'Python',
+			'Typescript',
+			'React',
+			'.NET',
+			'NestJS',
+			'Javascript',
+			'Django',
+			'Puppeteer',
+			'MongoDB',
+			'React Native',
+			'Dialogflow',
+			'ElectronJS',
+			'Power Platform',
+			'SQL Server',
+			'Firebase'
+		],
+		company: 'Firplak',
+		companyLogo: firplak_logo,
+		from: new Date(Date.parse('2021-11-01')),
+		to: new Date(Date.parse('2023-12-01'))
+	},
+	{
+		label: 'zanacode',
+		technologies: ['Typescript', 'React', 'Javascript', 'MongoDB', 'React Native', 'Firebase'],
+		company: 'ZanaCode',
+		companyLogo: zanacode_logo,
+		from: new Date(Date.parse('2022-02-01')),
+		to: new Date(Date.parse('2022-12-01'))
+	}
+];
 
 export const ACHIEVEMENTS: Array<Achievement> = [
 	{
@@ -74,7 +110,7 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 	{
 		title: 'accounting',
 		technologies: ['Python', 'C#', 'Power Platform'],
-		category: 'enterprise',
+		category: 'enterprise'
 	},
 	{
 		title: 'docs',
@@ -153,7 +189,7 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		title: 'cartera',
 		technologies: ['Typescript', 'ElectronJS'],
 		category: 'enterprise'
-	},
+	}
 ];
 
 export const AVAILABLE_TECHNOLOGIES = [
@@ -197,7 +233,8 @@ export const LANGUAGE_TOKENS = [
 	'metric-technology_label',
 	'metric-category_label',
 	'modal-image_label',
-	'contact-subtitle_label'
+	'contact-subtitle_label',
+	'experience_label'
 ];
 
 export const AVAILABLE_LANGUAGES = ['es', 'en'];

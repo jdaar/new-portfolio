@@ -17,6 +17,15 @@ export type Achievement = {
 	image?: Array<ImageDemo>;
 };
 
+export type Experience = {
+	label: string;
+	technologies: Array<Technology>;
+	company: string;
+	companyLogo: string;
+	from: Date;
+	to?: Date;
+};
+
 export type ImageDemo = { still: string; animated?: string };
 
 export type Language = (typeof AVAILABLE_LANGUAGES)[number];

@@ -18,6 +18,11 @@
 	font-family: 'Inter', 'Noto Color Emoji', sans-serif;
 }
 
+.default-tip {
+	position: absolute;
+	z-index: 999;
+}
+
 body,
 html {
 	background-color: var(--background-color);

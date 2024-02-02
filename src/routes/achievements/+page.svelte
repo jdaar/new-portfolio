@@ -98,7 +98,6 @@
 		width: 100%;
 	}
 
-
 	select {
 		background-color: var(--secondary-background-color);
 		border: none;
@@ -139,5 +138,5 @@
 			height: fit-content;
 			grid-row: 1fr;
 		}
-	} 
+	}
 </style>
