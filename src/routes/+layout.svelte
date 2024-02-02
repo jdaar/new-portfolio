@@ -94,7 +94,7 @@
 				<li>
 					<a
 						href={route}
-						class:selected={route == $page.url.pathname}
+						class:selected={route == routeName}
 						class:highlight={route == '/contact'}
 					>
 						{LANGUAGE_DICTIONARIES[$language][routes[route]['label']]}

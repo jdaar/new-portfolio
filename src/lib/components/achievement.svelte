@@ -66,7 +66,20 @@
 			>
 		</h2>
 		<p class="achievement-description">
-			{LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title]}.
+			{#if LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+')[0].trim().length > 0}
+			{LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+')[0].trim()}.
+			{/if}
+			{#if LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+').length > 1}
+				<ul>
+				{#each LANGUAGE_ACHIEVEMENTS[$language].description[achievement.title].split('$+').slice(1) as attribute}
+					{#if attribute.includes('🌟')}
+						<li class="star">{attribute.replace('🌟', '').trim()}</li>
+					{:else}
+						<li>{attribute.trim()}</li>
+					{/if}
+				{/each}
+				</ul>
+			{/if}
 		</p>
 		<div class="technologies">
 			{#each technologies_logos as technology}
@@ -134,6 +147,7 @@
 	.img-gallery {
 		overflow-x: scroll;
 		display: flex;
+		height: 100%;
 	}
 
 	.scaled-image {
@@ -277,6 +291,7 @@
 		align-items: center;
 		gap: 0.1em;
 		border-radius: 5px;
+		grid-template-rows: repeat( auto-fit, minmax(250px, 1fr) );
 	}
 
 	.achievement-title {
@@ -291,6 +306,30 @@
 
 	.achievement-description {
 		color: #fdfdfdd2;
+	}
+
+	.achievement-description > ul {
+		list-style: '+  ';
+		padding-left: 1em;
+	}
+
+	.star {
+		list-style: '🌟 ';
+	}
+
+	.achievement-description > ul> li {
+		color: rgb(135, 255, 135);
+	}
+
+	.achievement-description > ul> li::after {
+		content: '.';
+		margin: 0;
+		padding: 0;
+		color: rgb(135, 255, 135);
+	}
+
+	.achievement-description > ul > li::marker {
+		color: rgb(135, 255, 135);
 	}
 
 	.achievement-wrapper {

@@ -72,6 +72,28 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		category: 'enterprise'
 	},
 	{
+		title: 'accounting',
+		technologies: ['Python', 'C#', 'Power Platform'],
+		category: 'enterprise',
+	},
+	{
+		title: 'docs',
+		technologies: ['Typescript', 'React'],
+		category: 'enterprise',
+		image: [{ still: docs_1 }, { still: docs_2 }, { still: docs_3 }]
+	},
+	{
+		title: 'ns',
+		technologies: ['Typescript', 'Puppeteer', 'Power Platform'],
+		category: 'enterprise',
+		image: [{ still: ns_1 }]
+	},
+	{
+		title: 'seguimiento',
+		technologies: ['Python', 'Power Platform'],
+		category: 'enterprise'
+	},
+	{
 		title: 'trackpod',
 		technologies: ['NestJS', 'React', 'Typescript', 'MongoDB'],
 		category: 'enterprise',
@@ -132,23 +154,6 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 		technologies: ['Typescript', 'ElectronJS'],
 		category: 'enterprise'
 	},
-	{
-		title: 'seguimiento',
-		technologies: ['Python', 'Power Platform'],
-		category: 'enterprise'
-	},
-	{
-		title: 'docs',
-		technologies: ['Typescript', 'React'],
-		category: 'enterprise',
-		image: [{ still: docs_1 }, { still: docs_2 }, { still: docs_3 }]
-	},
-	{
-		title: 'ns',
-		technologies: ['Typescript', 'Puppeteer', 'Power Platform'],
-		category: 'enterprise',
-		image: [{ still: ns_1 }]
-	}
 ];
 
 export const AVAILABLE_TECHNOLOGIES = [

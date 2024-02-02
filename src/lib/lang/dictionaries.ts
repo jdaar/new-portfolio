@@ -26,35 +26,71 @@ const es_language_achievements = {
 	fsbuddy: 'FSBuddy',
 	careerpal: 'CareerPal',
 	chordsapp: 'Acordes',
-	unhorario: 'UNHorario',
+	unhorario: 'UNHorario 🌟',
 	alertbud: 'AlertBud',
 	sapb1connector: 'Conector SAP B1',
 	fpkjobs: 'FPKJobs',
 	trackpod: 'Trackpod',
 	cartera: 'Automatizacion de cartera',
 	seguimiento: 'Extraccion de metricas',
-	targetdireccional: 'Target Direccional',
+	targetdireccional: 'Target Direccional 🌟',
 	clip: 'Clip',
 	docs: 'Centro de documentacion',
-	ns: 'Nivel de servicio'
+	ns: 'Nivel de servicio',
+	accounting: 'Automatizacion de la cadena de suministro de documentos contables'
 };
 
 const es_language_achievement_descriptions = {
 	fsbuddy: 'Automatizacion del sistema de archivos',
 	careerpal: 'Extraccion de datos de ofertas laborales',
 	chordsapp: 'Visualizador de acordes y selector de intervalos',
-	unhorario: 'Administracion de horarios academicos',
+	unhorario: `
+Administracion de horarios academicos para estudiantes de la Universidad Nacional de Colombia
+$+ Mas de 1000 usuarios activos en tiempos de inscripcion de materias 🌟
+$+ Mas de 3000 materias registradas extraidas de la plataforma de la universidad 🌟
+`,
 	alertbud: 'Envia notificaciones en multiples plataformas',
-	sapb1connector: 'Integracion con el ERP con Power Platform',
-	fpkjobs: 'Extraccion de metricas e integracion con Power Platform',
-	trackpod: 'Recoleccion de POD (Pruebas de entrega)',
+	sapb1connector: `
+Integracion del ERP con Power Platform, ofreciendo un API REST para otras integraciones
+$+ 3 automatizaciones creadas usando el conector como base 🌟
+$+ Compatibilidad con Power Platform (Power Apps y Power Automate)
+$+ Conexion con SAP B1 de manera segura usando SAP B1 DI API
+`,
+	fpkjobs: `
+Libreria de Python que implementa un modelo de programacion restrictivo que permite automatizar la extraccion de metricas e integracion con Power Platform
+$+ 2 automatizaciones creadas usando la libreria como base 🌟
+$+ Observabilidad de todas las acciones realizadas por las automatizaciones
+$+ Sincronizacion con Power Platform e introduccion de datos en Dataverse
+`,
+	trackpod: `Recoleccion de POD (Pruebas de entrega)`,
 	cartera: 'Automatizacion para la segmentacion de la cartera',
-	seguimiento: 'Automatizacion para extraccion de metricas a partir de actividad en Power Platform',
-	targetdireccional:
-		'Calculo de metricas y guardado de informacion de excavaciones',
+	seguimiento: `
+Automatizacion para extraccion de metricas a partir de actividad en Power Platform
+$+ Visualizacion de los datos extraidos en un dashboard de Power BI 🌟
+$+ Seguimiento detallado de las acciones realizadas por los usuarios en Microsoft Teams
+`,
+	targetdireccional: `
+Calculo de metricas y guardado de informacion de excavaciones
+$+ Visualizacion de metricas y ayuda en la toma de decisiones 🌟
+$+ Extraccion de datos de excavaciones almacenados offline 
+$+ Sincronizacion de los datos de excavacion y calculo de metricas 
+`,
 	clip: 'Nube y gestion del portapapeles basado en nodos',
-	docs: 'Centro de documentacion y gestion del conocimiento para el area de TI',
-	ns: 'Automatizacion de calculo de metricas de distribuidores y notificacion de resultados'
+	docs: `
+Centro de documentacion y gestion del conocimiento para el area de TI
+$+ Documentacion de procesos de negocio relacionados al area de TI 🌟
+$+ Documentacion de artefactos de software y guias de uso 
+`,
+	ns: `
+Automatizacion de calculo de metricas de distribuidores y notificacion de resultados
+$+ Costo de implementacion cero con despliegue en la nube de Google 💰🌟
+$+ Mas de 200 reportes generados mensualmente y distribuidos mediante correo electronico a los distribuidores 
+`,
+	accounting: `
+$+ Mas de 30 horas de trabajo ahorrados semanalmente distribuido entre 6 agentes 💰🌟
+$+ Mas de 100 solicitudes de aprobacion para documentos contables procesados mensualmente 🌟
+$+ Mas de 10000 correos electronicos procesados anualmente 🌟
+`
 };
 
 const en_language_dictionary: LanguageDictionary = {
@@ -93,7 +129,8 @@ const en_language_achievements_description = {
 	targetdireccional: 'Calculate metrics and save data from excavations',
 	clip: 'Clipboard management and cloud based on nodes',
 	docs: 'Documentation center and knowledge management for the IT area',
-	ns: 'Automation of calculation of distributor metrics and notification of results'
+	ns: 'Automation of calculation of distributor metrics and notification of results',
+	accounting: ''
 };
 
 const en_language_achievements = {
@@ -110,7 +147,8 @@ const en_language_achievements = {
 	targetdireccional: 'Target Direccional',
 	clip: 'Clip',
 	docs: 'Documentation center',
-	ns: 'Service level'
+	ns: 'Service level',
+	accounting: ''
 };
 
 type LanguageDictionaries = {

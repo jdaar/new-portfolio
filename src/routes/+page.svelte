@@ -3,7 +3,7 @@
 	import type { Writable } from 'svelte/store';
 	import type { Language } from '$lib/@types';
 	import { LANGUAGE_DICTIONARIES } from '$lib/lang/dictionaries';
-	import profile_picture from '$lib/assets/pp.jpg';
+	import profile_picture from '$lib/assets/pp.png';
 	import { onMount } from 'svelte';
 	import chartjs from 'chart.js/auto';
 	import { ACHIEVEMENTS } from '$lib/const';
