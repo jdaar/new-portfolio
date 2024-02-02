@@ -158,7 +158,7 @@ const en_language_dictionary: LanguageDictionary = {
 	category_label: 'Category',
 	experience_label: 'My experience',
 	'experience-related_label': 'Related skills',
-	'contact-first_label': 'Let\'s contact first'
+	'contact-first_label': "Let's contact first"
 };
 
 const en_language_achievements_description = {

@@ -62,7 +62,9 @@
 				fill="white"
 			/>
 		</svg>
-		<button disabled class="accent-text">{LANGUAGE_DICTIONARIES[$language]['contact-first_label']}</button>
+		<button disabled class="accent-text"
+			>{LANGUAGE_DICTIONARIES[$language]['contact-first_label']}</button
+		>
 	</div>
 	<div class="network extended">
 		<svg
